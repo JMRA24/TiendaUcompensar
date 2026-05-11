@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================================================== -->
+    <!-- APLICACIÓN                                                          -->
+    <!-- ================================================================== -->
+    <string name="app_name">TiendaVirtual</string>
+    <string name="app_tagline">Todo lo que necesitas, en un solo lugar</string>
+    <string name="app_version">Versión %1$s</string>
+
+    <!-- ================================================================== -->
+    <!-- ACCIONES GLOBALES                                                   -->
+    <!-- ================================================================== -->
+    <string name="action_ok">Aceptar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_back">Volver</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_next">Siguiente</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_skip">Omitir</string>
+    <string name="action_done">Listo</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_sort">Ordenar</string>
+    <string name="action_add">Agregar</string>
+    <string name="action_remove">Quitar</string>
+    <string name="action_view_all">Ver todos</string>
+    <string name="action_see_more">Ver más</string>
+    <string name="action_yes">Sí</string>
+    <string name="action_no">No</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_apply">Aplicar</string>
+    <string name="action_clear">Limpiar</string>
+    <string name="action_undo">Deshacer</string>
+
+    <!-- ================================================================== -->
+    <!-- ESTADOS GLOBALES                                                    -->
+    <!-- ================================================================== -->
+    <string name="state_loading">Cargando…</string>
+    <string name="state_empty">Sin resultados</string>
+    <string name="state_error">Algo salió mal</string>
+
+    <!-- ================================================================== -->
+    <!-- ERRORES GLOBALES                                                    -->
+    <!-- ================================================================== -->
+    <string name="error_generic">Ha ocurrido un error inesperado. Por favor, intenta de nuevo.</string>
+    <string name="error_no_internet">Sin conexión a internet. Verifica tu red e intenta de nuevo.</string>
+    <string name="error_timeout">La solicitud tardó demasiado. Por favor, intenta de nuevo.</string>
+    <string name="error_server">Error en el servidor. Por favor, intenta más tarde.</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="error_invalid_format">Formato inválido</string>
+    <string name="error_no_results">No encontramos resultados</string>
+
+    <!-- ================================================================== -->
+    <!-- AUTH — SPLASH                                                       -->
+    <!-- ================================================================== -->
+    <string name="splash_loading">Preparando tu experiencia…</string>
+
+    <!-- ================================================================== -->
+    <!-- AUTH — LOGIN                                                        -->
+    <!-- ================================================================== -->
+    <string name="login_title">Bienvenido</string>
+    <string name="login_subtitle">Inicia sesión para continuar</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="hint_email">ejemplo@correo.com</string>
+    <string name="hint_password">Mínimo 6 caracteres</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_login_guest">Continuar como invitado</string>
+    <string name="btn_biometric_login">Ingresar con biometría</string>
+    <string name="login_divider_continue">O continúa con</string>
+    <string name="btn_google_login">Continuar con Google</string>
+    <string name="google_login_simulated">Inicio de sesión con Google simulado</string>
+    <string name="link_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_remember_me">Recordarme</string>
+    <string name="login_success_simulated">Inicio de sesión simulado para %1$s</string>
+    <string name="biometric_login_success">Biometría simulada aprobada para %1$s</string>
+    <string name="error_email_empty">Ingresa tu correo electrónico</string>
+    <string name="error_email_invalid">Ingresa un correo electrónico válido</string>
+    <string name="error_password_empty">Ingresa tu contraseña</string>
+    <string name="error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
+
+    <!-- ================================================================== -->
+    <!-- AUTH — RECUPERAR CONTRASEÑA                                         -->
+    <!-- ================================================================== -->
+    <string name="forgot_password_title">Recuperar contraseña</string>
+    <string name="forgot_password_subtitle">Ingresa tu correo y te enviaremos instrucciones para restablecer tu contraseña</string>
+    <string name="btn_send_reset">Enviar instrucciones</string>
+    <string name="btn_send_otp">Enviar OTP</string>
+    <string name="btn_reset_password">Actualizar contraseña</string>
+    <string name="label_otp">Código OTP</string>
+    <string name="hint_otp">Ingresa el código recibido</string>
+    <string name="label_new_password">Nueva contraseña</string>
+    <string name="label_confirm_password">Confirmar contraseña</string>
+    <string name="hint_confirm_password">Repite tu nueva contraseña</string>
+    <string name="forgot_password_otp_helper">Usa el OTP simulado mostrado en pantalla para crear una nueva contraseña.</string>
+    <string name="simulated_otp_code" translatable="false">123456</string>
+    <string name="success_otp_sent">OTP simulado enviado: %1$s</string>
+    <string name="success_reset_email_sent">Correo enviado. Revisa tu bandeja de entrada.</string>
+    <string name="success_password_updated">Contraseña actualizada correctamente</string>
+    <string name="error_email_not_found">No encontramos una cuenta con ese correo</string>
+    <string name="error_otp_empty">Ingresa el código OTP</string>
+    <string name="error_otp_invalid">El código OTP no es válido</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="link_back_to_login">Volver al inicio de sesión</string>
+
+    <!-- ================================================================== -->
+    <!-- NAVEGACIÓN PRINCIPAL                                                -->
+    <!-- ================================================================== -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_catalog">Catálogo</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_dashboard">Resumen</string>
+    <string name="nav_products">Productos</string>
+    <string name="nav_orders">Pedidos</string>
+    <string name="nav_users">Usuarios</string>
+    <string name="nav_reports">Reportes</string>
+    <string name="nav_product_detail">Detalle del producto</string>
+    <string name="nav_checkout">Checkout</string>
+    <string name="drawer_menu_label">Menú</string>
+    <string name="drawer_close_label">Cerrar menú</string>
+    <string name="navigation_placeholder_subtitle">Esta pantalla está lista en la navegación y pendiente de implementar.</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — INICIO (HomeFragment)                                   -->
+    <!-- ================================================================== -->
+    <string name="home_greeting">Hola, %1$s</string>
+    <string name="home_greeting_guest">Hola, explorador</string>
+    <string name="home_search_hint">Buscar productos…</string>
+    <string name="home_section_categories">Categorías</string>
+    <string name="home_section_featured">Destacados</string>
+    <string name="home_section_offers">Ofertas del día</string>
+    <string name="home_section_new_arrivals">Nuevos productos</string>
+    <string name="home_banner_one_title">Compra fácil y rápido</string>
+    <string name="home_banner_one_subtitle">Encuentra productos destacados para cada día</string>
+    <string name="home_banner_two_title">Ofertas seleccionadas</string>
+    <string name="home_banner_two_subtitle">Tecnología, hogar y moda en un solo lugar</string>
+    <string name="home_banner_three_title">Envíos simulados</string>
+    <string name="home_banner_three_subtitle">Flujo académico listo para probar compras</string>
+    <string name="home_banner_discount">%1$d%% de descuento</string>
+    <string name="home_empty_featured">No hay productos destacados</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — CATÁLOGO (CatalogFragment)                              -->
+    <!-- ================================================================== -->
+    <string name="catalog_title">Catálogo</string>
+    <string name="catalog_search_hint">Buscar en el catálogo…</string>
+    <string name="catalog_results_count">%1$d productos encontrados</string>
+    <string name="catalog_results_one">1 producto encontrado</string>
+    <string name="catalog_no_results">No encontramos productos con esos criterios</string>
+    <string name="catalog_no_results_hint">Intenta ajustar tu búsqueda o filtros</string>
+    <string name="filter_sheet_title">Filtros</string>
+    <string name="filter_category">Categoría</string>
+    <string name="filter_price_range">Rango de precio</string>
+    <string name="filter_min_price">Precio mínimo</string>
+    <string name="filter_max_price">Precio máximo</string>
+    <string name="filter_all_categories">Todas las categorías</string>
+    <string name="filter_available_only">Disponibles</string>
+    <string name="btn_apply_filters">Aplicar filtros</string>
+    <string name="btn_clear_filters">Limpiar filtros</string>
+    <string name="sort_sheet_title">Ordenar por</string>
+    <string name="sort_relevance">Relevancia</string>
+    <string name="sort_price_asc">Precio: menor a mayor</string>
+    <string name="sort_price_desc">Precio: mayor a menor</string>
+    <string name="sort_name_asc">Nombre: A–Z</string>
+    <string name="sort_name_desc">Nombre: Z–A</string>
+    <string name="sort_newest">Más recientes</string>
+
+    <!-- ================================================================== -->
+    <!-- CATEGORÍAS                                                          -->
+    <!-- ================================================================== -->
+    <string name="category_all">Todos</string>
+    <string name="category_electronics">Electrónica</string>
+    <string name="category_clothing">Ropa y moda</string>
+    <string name="category_home">Hogar</string>
+    <string name="category_sports">Deportes</string>
+    <string name="category_books">Libros</string>
+    <string name="category_toys">Juguetes</string>
+    <string name="category_food">Alimentos</string>
+    <string name="category_beauty">Belleza</string>
+    <string name="category_other">Otros</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — DETALLE DE PRODUCTO (ProductDetailFragment)             -->
+    <!-- ================================================================== -->
+    <string name="product_detail_title">Detalle del producto</string>
+    <string name="product_label_price">Precio</string>
+    <string name="product_label_original_price">Precio original</string>
+    <string name="product_label_discount">%1$d%% OFF</string>
+    <string name="product_label_category">Categoría</string>
+    <string name="product_label_stock">Disponibilidad</string>
+    <string name="product_label_description">Descripción</string>
+    <string name="product_label_quantity">Cantidad</string>
+    <string name="product_label_rating">Calificación</string>
+    <string name="product_rating_value">4.8 de 5</string>
+    <string name="product_detail_rating_format">Calificación: %1$s</string>
+    <string name="product_not_found">Producto no encontrado</string>
+    <string name="product_in_stock">En stock (%1$d disponibles)</string>
+    <string name="product_low_stock">¡Últimas %1$d unidades!</string>
+    <string name="product_out_of_stock">Sin stock</string>
+    <string name="product_free_shipping">Envío gratis</string>
+    <string name="btn_add_to_cart">Agregar al carrito</string>
+    <string name="btn_buy_now">Comprar ahora</string>
+    <string name="added_to_cart_success">Producto agregado al carrito</string>
+    <string name="already_in_cart">Ya tienes este producto en tu carrito</string>
+    <string name="product_quantity_max">Cantidad máxima alcanzada</string>
+    <string name="product_share_text">¡Mira este producto en TiendaVirtual! %1$s</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — CARRITO (CartFragment)                                  -->
+    <!-- ================================================================== -->
+    <string name="cart_title">Mi carrito</string>
+    <string name="cart_items_count">%1$d artículo(s)</string>
+    <string name="cart_empty_title">Tu carrito está vacío</string>
+    <string name="cart_empty_subtitle">Explora nuestro catálogo y encuentra lo que necesitas</string>
+    <string name="btn_continue_shopping">Explorar catálogo</string>
+    <string name="cart_label_subtotal">Subtotal</string>
+    <string name="cart_label_shipping">Envío</string>
+    <string name="cart_label_discount">Descuento</string>
+    <string name="cart_label_total">Total</string>
+    <string name="summary_subtotal">Subtotal: %1$s</string>
+    <string name="summary_shipping">Envío: %1$s</string>
+    <string name="summary_total">Total: %1$s</string>
+    <string name="cart_shipping_free">Gratis</string>
+    <string name="cart_summary_title">Resumen de compra</string>
+    <string name="btn_checkout">Proceder al pago</string>
+    <string name="cart_item_removed">Artículo eliminado del carrito</string>
+    <string name="dialog_clear_cart_title">Vaciar carrito</string>
+    <string name="dialog_clear_cart_message">¿Estás seguro de que deseas eliminar todos los artículos del carrito?</string>
+    <string name="btn_clear_cart">Vaciar carrito</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — CHECKOUT (CheckoutFragment)                             -->
+    <!-- ================================================================== -->
+    <string name="checkout_title">Resumen del pedido</string>
+    <string name="checkout_section_address">Dirección de envío</string>
+    <string name="checkout_section_payment">Método de pago</string>
+    <string name="checkout_section_summary">Resumen del pedido</string>
+    <string name="checkout_order_preview">Productos en carrito: %1$d</string>
+    <string name="label_full_name">Nombre completo</string>
+    <string name="label_address">Dirección</string>
+    <string name="label_city">Ciudad</string>
+    <string name="label_phone">Teléfono</string>
+    <string name="label_zip_code">Código postal</string>
+    <string name="hint_full_name">Juan Pérez</string>
+    <string name="hint_address">Calle 123 # 45-67, Apto 8</string>
+    <string name="hint_city">Bogotá</string>
+    <string name="hint_phone">+57 300 000 0000</string>
+    <string name="hint_zip_code">110111</string>
+    <string name="payment_cash">Contra entrega</string>
+    <string name="payment_card">Tarjeta de crédito/débito</string>
+    <string name="payment_transfer">Transferencia bancaria</string>
+    <string name="btn_place_order">Confirmar pedido</string>
+    <string name="error_name_required">Ingresa tu nombre completo</string>
+    <string name="error_address_required">Ingresa tu dirección de envío</string>
+    <string name="error_city_required">Ingresa tu ciudad</string>
+    <string name="error_phone_required">Ingresa tu número de teléfono</string>
+    <string name="error_phone_invalid">Ingresa un número de teléfono válido</string>
+    <string name="order_success_title">¡Pedido confirmado!</string>
+    <string name="order_success_subtitle">Tu pedido ha sido recibido y está siendo procesado</string>
+    <string name="order_number">Pedido #%1$s</string>
+    <string name="btn_track_order">Ver estado del pedido</string>
+    <string name="btn_continue_shopping_after_order">Seguir comprando</string>
+
+    <!-- ================================================================== -->
+    <!-- COMPRADOR — PERFIL (ProfileFragment)                                -->
+    <!-- ================================================================== -->
+    <string name="profile_title">Mi perfil</string>
+    <string name="profile_section_info">Información personal</string>
+    <string name="profile_section_orders">Mis pedidos</string>
+    <string name="profile_section_settings">Configuración</string>
+    <string name="profile_contact_title">Datos de contacto</string>
+    <string name="profile_orders_count">%1$d pedidos realizados</string>
+    <string name="profile_no_orders">Aún no tienes pedidos</string>
+    <string name="btn_edit_profile">Editar perfil</string>
+    <string name="btn_my_orders">Ver mis pedidos</string>
+    <string name="btn_logout">Cerrar sesión</string>
+    <string name="dialog_logout_title">Cerrar sesión</string>
+    <string name="dialog_logout_message">¿Estás seguro de que deseas cerrar sesión?</string>
+    <string name="label_member_since">Miembro desde %1$s</string>
+    <string name="label_user_role">Rol</string>
+
+    <!-- ================================================================== -->
+    <!-- ESTADO DE ÓRDENES                                                   -->
+    <!-- ================================================================== -->
+    <string name="order_status_pending">Pendiente</string>
+    <string name="order_status_processing">En proceso</string>
+    <string name="order_status_shipped">Enviado</string>
+    <string name="order_status_delivered">Entregado</string>
+    <string name="order_status_cancelled">Cancelado</string>
+    <string name="label_order_id">Pedido #%1$s</string>
+    <string name="label_order_date">Fecha: %1$s</string>
+    <string name="label_order_total">Total: $%1$s</string>
+    <string name="label_customer">Cliente</string>
+    <string name="label_items_count">%1$d artículo(s)</string>
+
+    <!-- ================================================================== -->
+    <!-- VENDEDOR — DASHBOARD (SellerDashboardFragment)                      -->
+    <!-- ================================================================== -->
+    <string name="seller_dashboard_title">Panel de vendedor</string>
+    <string name="seller_dashboard_welcome">Bienvenido, %1$s</string>
+    <string name="seller_stat_total_revenue">Ingresos totales</string>
+    <string name="seller_stat_total_orders">Pedidos totales</string>
+    <string name="seller_stat_active_products">Productos activos</string>
+    <string name="seller_stat_pending_orders">Pedidos pendientes</string>
+    <string name="seller_stat_low_stock">Stock bajo</string>
+    <string name="seller_quick_actions_title">Accesos rápidos</string>
+    <string name="seller_section_recent_orders">Pedidos recientes</string>
+    <string name="seller_section_top_products">Productos más vendidos</string>
+    <string name="seller_no_recent_orders">No tienes pedidos recientes</string>
+
+    <!-- ================================================================== -->
+    <!-- VENDEDOR — LISTA DE PRODUCTOS (ProductListFragment)                 -->
+    <!-- ================================================================== -->
+    <string name="seller_products_title">Mis productos</string>
+    <string name="seller_products_count">%1$d productos</string>
+    <string name="btn_add_product">Agregar producto</string>
+    <string name="seller_no_products_title">Sin productos aún</string>
+    <string name="seller_no_products_subtitle">Agrega tu primer producto para comenzar a vender</string>
+    <string name="product_status_active">Activo</string>
+    <string name="product_status_inactive">Inactivo</string>
+    <string name="product_stock_label">Stock: %1$d</string>
+
+    <!-- ================================================================== -->
+    <!-- VENDEDOR — CREAR / EDITAR PRODUCTO                                  -->
+    <!-- ================================================================== -->
+    <string name="create_product_title">Nuevo producto</string>
+    <string name="edit_product_title">Editar producto</string>
+    <string name="label_product_name">Nombre del producto</string>
+    <string name="label_product_price">Precio (COP)</string>
+    <string name="label_product_description">Descripción</string>
+    <string name="label_product_category">Categoría</string>
+    <string name="label_product_stock">Stock disponible</string>
+    <string name="label_product_image">Imagen del producto</string>
+    <string name="label_product_discount">Descuento (%)</string>
+    <string name="hint_product_name">Ej: Camiseta deportiva azul</string>
+    <string name="hint_product_price">Ej: 50000</string>
+    <string name="hint_product_description">Describe tu producto detalladamente…</string>
+    <string name="hint_product_stock">Ej: 100</string>
+    <string name="hint_product_discount">Ej: 15</string>
+    <string name="btn_choose_image">Seleccionar imagen</string>
+    <string name="btn_save_product">Guardar producto</string>
+    <string name="btn_save_product_changes">Guardar cambios</string>
+    <string name="product_image_mock_selected">Imagen simulada seleccionada</string>
+    <string name="error_product_name_required">Ingresa el nombre del producto</string>
+    <string name="error_product_name_short">El nombre debe tener al menos 3 caracteres</string>
+    <string name="error_product_price_required">Ingresa el precio del producto</string>
+    <string name="error_product_price_invalid">Ingresa un precio válido (mayor a cero)</string>
+    <string name="error_product_description_required">Ingresa una descripción del producto</string>
+    <string name="error_product_category_required">Selecciona una categoría</string>
+    <string name="error_product_stock_required">Ingresa el stock disponible</string>
+    <string name="error_product_stock_invalid">El stock debe ser cero o mayor</string>
+    <string name="error_product_discount_invalid">El descuento debe estar entre 0 y 99</string>
+    <string name="product_created_success">Producto creado exitosamente</string>
+    <string name="product_updated_success">Producto actualizado exitosamente</string>
+    <string name="product_deleted_success">Producto eliminado exitosamente</string>
+    <string name="dialog_delete_product_title">Eliminar producto</string>
+    <string name="dialog_delete_product_message">¿Estás seguro de que deseas eliminar \"%1$s\"? Esta acción no se puede deshacer.</string>
+
+    <!-- ================================================================== -->
+    <!-- VENDEDOR — PEDIDOS (SellerOrdersFragment)                           -->
+    <!-- ================================================================== -->
+    <string name="seller_orders_title">Pedidos</string>
+    <string name="seller_orders_filter_all">Todos</string>
+    <string name="seller_no_orders_title">Sin pedidos aún</string>
+    <string name="seller_no_orders_subtitle">Aquí verás los pedidos de tus productos</string>
+    <string name="seller_orders_count">%1$d pedidos</string>
+    <string name="seller_order_customer">Cliente: %1$s</string>
+    <string name="seller_order_products">Productos del pedido: %1$d</string>
+    <string name="btn_update_order_status">Actualizar estado</string>
+    <string name="order_status_updated_success">Estado del pedido actualizado</string>
+
+    <!-- ================================================================== -->
+    <!-- VENDEDOR — PERFIL (SellerProfileFragment)                           -->
+    <!-- ================================================================== -->
+    <string name="seller_profile_title">Perfil de vendedor</string>
+    <string name="seller_store_name">Nombre de la tienda</string>
+    <string name="seller_stats_label">Estadísticas de ventas</string>
+    <string name="seller_total_products_label">Total productos</string>
+    <string name="seller_total_sales_label">Total ventas</string>
+
+    <!-- ================================================================== -->
+    <!-- ADMINISTRADOR — DASHBOARD (AdminDashboardFragment)                  -->
+    <!-- ================================================================== -->
+    <string name="admin_dashboard_title">Panel de administrador</string>
+    <string name="admin_dashboard_welcome">Panel de control</string>
+    <string name="admin_stat_total_users">Usuarios registrados</string>
+    <string name="admin_stat_total_products">Productos en catálogo</string>
+    <string name="admin_stat_total_orders">Pedidos totales</string>
+    <string name="admin_stat_monthly_revenue">Ingresos del mes</string>
+    <string name="admin_section_recent_activity">Actividad reciente</string>
+    <string name="admin_section_system_overview">Resumen del sistema</string>
+    <string name="admin_section_quick_actions">Acciones rápidas</string>
+    <string name="admin_chart_users_by_role">Usuarios por rol</string>
+    <string name="admin_chart_orders_by_status">Pedidos por estado</string>
+    <string name="admin_recent_activity_mock">Última sincronización mock completada</string>
+    <string name="admin_metric_format">%1$s: %2$s</string>
+
+    <!-- ================================================================== -->
+    <!-- ADMINISTRADOR — USUARIOS (UserListFragment)                         -->
+    <!-- ================================================================== -->
+    <string name="admin_users_title">Gestión de usuarios</string>
+    <string name="admin_users_count">%1$d usuarios</string>
+    <string name="btn_add_user">Agregar usuario</string>
+    <string name="admin_no_users_title">Sin usuarios registrados</string>
+    <string name="admin_no_users_subtitle">Agrega usuarios para que puedan acceder a la plataforma</string>
+    <string name="user_status_active">Activo</string>
+    <string name="user_status_inactive">Inactivo</string>
+    <string name="user_status_blocked">Bloqueado</string>
+    <string name="label_user_email">Correo</string>
+    <string name="label_user_status">Estado</string>
+    <string name="label_user_created">Registrado el %1$s</string>
+    <string name="label_last_login">Último acceso: %1$s</string>
+    <string name="filter_role_all">Todos los roles</string>
+    <string name="user_role_format">Rol: %1$s</string>
+    <string name="user_phone_format">Teléfono: %1$s</string>
+
+    <!-- ================================================================== -->
+    <!-- ADMINISTRADOR — CREAR / EDITAR USUARIO                              -->
+    <!-- ================================================================== -->
+    <string name="create_user_title">Nuevo usuario</string>
+    <string name="edit_user_title">Editar usuario</string>
+    <string name="label_user_name">Nombre completo</string>
+    <string name="label_user_password">Contraseña temporal</string>
+    <string name="label_user_phone">Teléfono</string>
+    <string name="label_select_role">Seleccionar rol</string>
+    <string name="role_admin">Administrador</string>
+    <string name="role_seller">Vendedor</string>
+    <string name="role_buyer">Comprador</string>
+    <string name="hint_user_name">Nombre y apellido</string>
+    <string name="hint_user_password">Mínimo 6 caracteres</string>
+    <string name="hint_user_phone">300 000 0000</string>
+    <string name="hint_user_role">Administrador, vendedor o comprador</string>
+    <string name="btn_save_user">Guardar usuario</string>
+    <string name="btn_save_user_changes">Guardar cambios</string>
+    <string name="error_user_name_required">Ingresa el nombre del usuario</string>
+    <string name="error_user_email_required">Ingresa el correo del usuario</string>
+    <string name="error_user_email_invalid">Ingresa un correo válido para el usuario</string>
+    <string name="error_user_password_required">Ingresa una contraseña temporal</string>
+    <string name="error_user_password_short">La contraseña temporal debe tener al menos 6 caracteres</string>
+    <string name="error_user_phone_required">Ingresa el teléfono del usuario</string>
+    <string name="error_user_role_required">Selecciona un rol para el usuario</string>
+    <string name="user_created_success">Usuario creado exitosamente</string>
+    <string name="user_updated_success">Usuario actualizado exitosamente</string>
+    <string name="user_deleted_success">Usuario eliminado exitosamente</string>
+    <string name="dialog_delete_user_title">Eliminar usuario</string>
+    <string name="dialog_delete_user_message">¿Estás seguro de que deseas eliminar a \"%1$s\"? Esta acción no se puede deshacer.</string>
+    <string name="dialog_toggle_user_status_title">Cambiar estado</string>
+    <string name="dialog_block_user_message">¿Deseas bloquear a \"%1$s\"? No podrá acceder a la aplicación.</string>
+    <string name="dialog_activate_user_message">¿Deseas activar la cuenta de \"%1$s\"?</string>
+
+    <!-- ================================================================== -->
+    <!-- ADMINISTRADOR — PRODUCTOS (AdminProductsFragment)                   -->
+    <!-- ================================================================== -->
+    <string name="admin_products_title">Todos los productos</string>
+    <string name="admin_products_count">%1$d productos en total</string>
+    <string name="admin_product_seller_label">Vendedor: %1$s</string>
+    <string name="admin_product_management_hint">Gestión global del catálogo</string>
+    <string name="admin_product_selected">Producto seleccionado: %1$s</string>
+
+    <!-- ================================================================== -->
+    <!-- ADMINISTRADOR — REPORTE DE VENTAS (SalesReportFragment)             -->
+    <!-- ================================================================== -->
+    <string name="sales_report_title">Reporte de ventas</string>
+    <string name="report_period_label">Período</string>
+    <string name="report_period_daily">Hoy</string>
+    <string name="report_period_weekly">Esta semana</string>
+    <string name="report_period_monthly">Este mes</string>
+    <string name="report_period_annual">Este año</string>
+    <string name="report_total_revenue">Ingresos totales</string>
+    <string name="report_total_orders">Total de pedidos</string>
+    <string name="report_avg_order_value">Valor promedio por pedido</string>
+    <string name="report_conversion_rate">Tasa de conversión</string>
+    <string name="report_section_top_products">Productos más vendidos</string>
+    <string name="report_section_by_category">Ventas por categoría</string>
+    <string name="report_section_by_period">Ventas por período</string>
+    <string name="report_no_data">Sin datos para el período seleccionado</string>
+    <string name="report_chart_revenue">Ingresos por categoría</string>
+    <string name="report_chart_orders">Pedidos por estado</string>
+    <string name="report_top_product_line">%1$s - %2$d unidades</string>
+    <string name="report_rank_label">#%1$d</string>
+    <string name="report_units_sold">%1$d unidades vendidas</string>
+
+    <!-- ================================================================== -->
+    <!-- FORMATOS                                                            -->
+    <!-- ================================================================== -->
+    <string name="format_price">$%1$s</string>
+    <string name="format_currency_thousands">$ %1$dK</string>
+    <string name="format_currency_millions">$ %.1fM</string>
+    <string name="format_percentage">%1$d%%</string>
+    <string name="format_quantity">× %1$d</string>
+    <string name="format_stock">%1$d en stock</string>
+
+    <!-- ================================================================== -->
+    <!-- ACCESIBILIDAD — Content Descriptions                                -->
+    <!-- ================================================================== -->
+    <string name="cd_product_image">Imagen del producto %1$s</string>
+    <string name="cd_product_image_generic">Imagen del producto</string>
+    <string name="cd_user_avatar">Avatar de %1$s</string>
+    <string name="cd_back_button">Volver</string>
+    <string name="cd_cart_button">Ir al carrito</string>
+    <string name="cd_search_button">Buscar</string>
+    <string name="cd_filter_button">Filtrar resultados</string>
+    <string name="cd_add_to_cart">Agregar %1$s al carrito</string>
+    <string name="cd_delete_item">Eliminar %1$s</string>
+    <string name="cd_edit_item">Editar %1$s</string>
+    <string name="cd_cart_badge">%1$d artículos en el carrito</string>
+    <string name="cd_close_bottom_sheet">Cerrar panel</string>
+    <string name="cd_increase_quantity">Aumentar cantidad</string>
+    <string name="cd_decrease_quantity">Disminuir cantidad</string>
+    <string name="cd_app_logo">Logo de TiendaVirtual</string>
+
+    <plurals name="catalog_results_quantity">
+        <item quantity="one">1 producto encontrado</item>
+        <item quantity="other">%1$d productos encontrados</item>
+    </plurals>
+
+</resources>

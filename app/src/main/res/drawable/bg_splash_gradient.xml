@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Gradiente diagonal para el SplashActivity.
+    Fluye de azul oscuro (superior-izquierdo) a azul claro (inferior-derecho).
+    Referencia en SplashActivity:
+        android:background="@drawable/bg_splash_gradient"
+    O como windowBackground en Theme.TiendaVirtual.Splash.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradiente principal: diagonal 135° (noroeste → sureste) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="@color/color_primary_dark"
+                android:centerColor="@color/color_primary"
+                android:endColor="@color/color_primary_light"
+                android:centerX="0.4"
+                android:centerY="0.4" />
+        </shape>
+    </item>
+
+    <!-- Capa decorativa: viñeta suave en esquina inferior-derecha -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="150%"
+                android:startColor="@color/transparent"
+                android:endColor="@color/color_overlay_medium"
+                android:centerX="0.9"
+                android:centerY="0.9" />
+        </shape>
+    </item>
+
+    <!-- Capa decorativa: destello suave en esquina superior-izquierda -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="120%"
+                android:startColor="@color/color_ripple_on_dark"
+                android:endColor="@color/transparent"
+                android:centerX="0.1"
+                android:centerY="0.1" />
+        </shape>
+    </item>
+
+</layer-list>

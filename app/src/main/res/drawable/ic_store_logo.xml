@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/splash_logo_size"
+    android:height="@dimen/splash_logo_size"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <path
+        android:fillColor="@color/color_on_primary"
+        android:pathData="M24,40 L32,20 H88 L96,40 Z" />
+
+    <path
+        android:fillColor="@color/color_primary_container"
+        android:pathData="M30,42 H90 V94 A6,6 0,0,1 84,100 H36 A6,6 0,0,1 30,94 Z" />
+
+    <path
+        android:fillColor="@color/color_secondary"
+        android:pathData="M42,42 V52 A10,10 0,0,0 62,52 V42 Z" />
+
+    <path
+        android:fillColor="@color/color_primary_light"
+        android:pathData="M62,42 V52 A10,10 0,0,0 82,52 V42 Z" />
+
+    <path
+        android:fillColor="@color/color_primary"
+        android:pathData="M48,70 H72 A5,5 0,0,1 77,75 V100 H43 V75 A5,5 0,0,1 48,70 Z" />
+
+    <path
+        android:fillColor="@color/color_on_primary"
+        android:pathData="M66,84 A3,3 0,1,0 72,84 A3,3 0,1,0 66,84 Z" />
+</vector>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.TiendaVirtual.Card.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_card"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_card">
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/TextAppearance.TiendaVirtual.TitleMedium"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/userStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userStatus"
+            style="@style/TextAppearance.TiendaVirtual.LabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userName" />
+
+        <TextView
+            android:id="@+id/userRole"
+            style="@style/TextAppearance.TiendaVirtual.BodySmall"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            app:layout_constraintEnd_toStartOf="@id/userPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userEmail" />
+
+        <TextView
+            android:id="@+id/userPhone"
+            style="@style/TextAppearance.TiendaVirtual.BodySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/userRole"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

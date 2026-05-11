@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ColorStateList para Bottom Navigation View.
+    Controla el color de íconos y etiquetas según el estado de selección.
+
+    Uso en XML de BottomNavigationView:
+        app:itemIconTint="@drawable/selector_bottom_nav"
+        app:itemTextColor="@drawable/selector_bottom_nav"
+
+    Uso en styles.xml:
+        <item name="itemIconTint">@drawable/selector_bottom_nav</item>
+        <item name="itemTextColor">@drawable/selector_bottom_nav</item>
+
+    Nota: al estar en res/drawable/ se referencia con @drawable/.
+          Puede moverse a res/color/ y referenciarse con @color/ si se prefiere.
+          Android resuelve correctamente ColorStateList desde ambas carpetas (API 21+).
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ítem activo / seleccionado -->
+    <item
+        android:state_checked="true"
+        android:color="@color/color_bottom_nav_selected" />
+
+    <!-- Ítem presionado (feedback táctil) -->
+    <item
+        android:state_pressed="true"
+        android:color="@color/color_bottom_nav_selected" />
+
+    <!-- Ítem con foco (accesibilidad / teclado) -->
+    <item
+        android:state_focused="true"
+        android:color="@color/color_primary" />
+
+    <!-- Ítem inactivo / sin selección -->
+    <item android:color="@color/color_bottom_nav_unselected" />
+
+</selector>

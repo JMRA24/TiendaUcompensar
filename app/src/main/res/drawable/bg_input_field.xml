@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Fondo de campo de texto estilizado con estados visuales diferenciados.
+    Orden de evaluación del selector: disabled → focused → activated → normal.
+
+    Uso directo en EditText sin TextInputLayout:
+        android:background="@drawable/bg_input_field"
+
+    Cuando se usa con TextInputLayout, aplicar el estilo
+    Widget.TiendaVirtual.TextInputLayout en su lugar (maneja estados internamente).
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado: deshabilitado — fondo gris y borde apagado -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_input" />
+            <solid android:color="@color/color_surface_variant" />
+            <stroke
+                android:width="@dimen/stroke_width"
+                android:color="@color/color_outline_variant" />
+        </shape>
+    </item>
+
+    <!-- Estado: con foco activo — borde primario más grueso, fondo con tono -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_input" />
+            <solid android:color="@color/color_surface_tint" />
+            <stroke
+                android:width="@dimen/stroke_width_medium"
+                android:color="@color/color_primary" />
+        </shape>
+    </item>
+
+    <!-- Estado: activado (campo relleno sin foco) — borde ligeramente destacado -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_input" />
+            <solid android:color="@color/color_surface" />
+            <stroke
+                android:width="@dimen/stroke_width"
+                android:color="@color/color_on_surface_variant" />
+        </shape>
+    </item>
+
+    <!-- Estado: normal / reposo — borde outline estándar -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_input" />
+            <solid android:color="@color/color_surface" />
+            <stroke
+                android:width="@dimen/stroke_width"
+                android:color="@color/color_outline" />
+        </shape>
+    </item>
+
+</selector>

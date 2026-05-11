@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Ícono placeholder para productos sin imagen.
+    Representa el icono clásico de "imagen no disponible":
+    fondo gris redondeado + sol + montañas (landscape icon).
+    Viewport: 48×48, tamaño base: 48dp × 48dp (escalar con width/height).
+    Uso: android:src="@drawable/ic_placeholder_product"
+         app:srcCompat="@drawable/ic_placeholder_product"
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- ── Fondo: rectángulo redondeado ──────────────────────────────── -->
+    <path
+        android:fillColor="@color/color_surface_variant"
+        android:pathData="
+            M 8,4
+            H 40
+            A 4,4 0,0,1 44,8
+            V 40
+            A 4,4 0,0,1 40,44
+            H 8
+            A 4,4 0,0,1 4,40
+            V 8
+            A 4,4 0,0,1 8,4
+            Z" />
+
+    <!-- ── Sol: círculo en esquina superior-derecha ───────────────────── -->
+    <!--  Centro (34, 15), radio 5  →  dos semicírculos -->
+    <path
+        android:fillColor="@color/color_outline"
+        android:pathData="
+            M 29,15
+            A 5,5 0,1,0 39,15
+            A 5,5 0,1,0 29,15
+            Z" />
+
+    <!-- ── Montaña trasera (más alta, más clara) ─────────────────────── -->
+    <path
+        android:fillColor="@color/color_on_surface_variant"
+        android:pathData="
+            M 4,38
+            L 20,18
+            L 36,38
+            Z" />
+
+    <!-- ── Montaña delantera (más baja, color outline) ───────────────── -->
+    <path
+        android:fillColor="@color/color_outline"
+        android:pathData="
+            M 22,38
+            L 34,24
+            L 46,38
+            Z" />
+
+    <!-- ── Base: franja de terreno inferior ──────────────────────────── -->
+    <path
+        android:fillColor="@color/color_outline"
+        android:pathData="
+            M 4,38
+            H 44
+            V 40
+            A 4,4 0,0,1 40,44
+            H 8
+            A 4,4 0,0,1 4,40
+            Z" />
+
+</vector>

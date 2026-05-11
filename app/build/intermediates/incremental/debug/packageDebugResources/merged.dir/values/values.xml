@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background">#F8FAFC</color>
+    <color name="color_background_night">#0F172A</color>
+    <color name="color_bottom_nav_background">#FFFFFF</color>
+    <color name="color_bottom_nav_selected">#1A56DB</color>
+    <color name="color_bottom_nav_unselected">#94A3B8</color>
+    <color name="color_chart_1">#1A56DB</color>
+    <color name="color_chart_2">#F97316</color>
+    <color name="color_chart_3">#10B981</color>
+    <color name="color_chart_4">#8B5CF6</color>
+    <color name="color_chart_5">#F59E0B</color>
+    <color name="color_chart_grid">#E2E8F0</color>
+    <color name="color_chart_label">#64748B</color>
+    <color name="color_discount_badge">#EF4444</color>
+    <color name="color_discount_badge_text">#FFFFFF</color>
+    <color name="color_error">#EF4444</color>
+    <color name="color_error_container">#FEE2E2</color>
+    <color name="color_error_night">#F87171</color>
+    <color name="color_google_blue">#4285F4</color>
+    <color name="color_google_green">#34A853</color>
+    <color name="color_google_red">#EA4335</color>
+    <color name="color_google_yellow">#FBBC05</color>
+    <color name="color_in_stock">#22C55E</color>
+    <color name="color_info">#3B82F6</color>
+    <color name="color_info_container">#DBEAFE</color>
+    <color name="color_low_stock">#F59E0B</color>
+    <color name="color_on_background">#0F172A</color>
+    <color name="color_on_background_night">#F8FAFC</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_on_error_container">#7F1D1D</color>
+    <color name="color_on_error_night">#7F1D1D</color>
+    <color name="color_on_info">#FFFFFF</color>
+    <color name="color_on_info_container">#1E3A8A</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_primary_container">#1E3A8A</color>
+    <color name="color_on_primary_container_night">#BFDBFE</color>
+    <color name="color_on_primary_night">#1E3A8A</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_on_secondary_container">#7C2D12</color>
+    <color name="color_on_secondary_night">#7C2D12</color>
+    <color name="color_on_success">#FFFFFF</color>
+    <color name="color_on_success_container">#14532D</color>
+    <color name="color_on_surface">#1E293B</color>
+    <color name="color_on_surface_night">#E2E8F0</color>
+    <color name="color_on_surface_variant">#64748B</color>
+    <color name="color_on_surface_variant_night">#94A3B8</color>
+    <color name="color_on_tertiary">#FFFFFF</color>
+    <color name="color_on_tertiary_container">#064E3B</color>
+    <color name="color_on_warning">#FFFFFF</color>
+    <color name="color_on_warning_container">#78350F</color>
+    <color name="color_order_cancelled">#EF4444</color>
+    <color name="color_order_cancelled_container">#FEE2E2</color>
+    <color name="color_order_delivered">#22C55E</color>
+    <color name="color_order_delivered_container">#DCFCE7</color>
+    <color name="color_order_pending">#F59E0B</color>
+    <color name="color_order_pending_container">#FEF3C7</color>
+    <color name="color_order_processing">#3B82F6</color>
+    <color name="color_order_processing_container">#DBEAFE</color>
+    <color name="color_order_shipped">#8B5CF6</color>
+    <color name="color_order_shipped_container">#EDE9FE</color>
+    <color name="color_out_of_stock">#EF4444</color>
+    <color name="color_outline">#CBD5E1</color>
+    <color name="color_outline_night">#475569</color>
+    <color name="color_outline_variant">#E2E8F0</color>
+    <color name="color_outline_variant_night">#334155</color>
+    <color name="color_overlay_dark">#80000000</color>
+    <color name="color_overlay_light">#1A000000</color>
+    <color name="color_overlay_medium">#4D000000</color>
+    <color name="color_price">#DC2626</color>
+    <color name="color_price_original">#94A3B8</color>
+    <color name="color_primary">#1A56DB</color>
+    <color name="color_primary_container">#DBEAFE</color>
+    <color name="color_primary_container_night">#1E3A8A</color>
+    <color name="color_primary_dark">#1348B8</color>
+    <color name="color_primary_light">#4E80EE</color>
+    <color name="color_primary_night">#60A5FA</color>
+    <color name="color_ripple_on_dark">#1AFFFFFF</color>
+    <color name="color_ripple_primary">#1A1A56DB</color>
+    <color name="color_role_admin">#7C3AED</color>
+    <color name="color_role_admin_container">#EDE9FE</color>
+    <color name="color_role_buyer">#10B981</color>
+    <color name="color_role_buyer_container">#D1FAE5</color>
+    <color name="color_role_seller">#1A56DB</color>
+    <color name="color_role_seller_container">#DBEAFE</color>
+    <color name="color_scrim">#99000000</color>
+    <color name="color_secondary">#F97316</color>
+    <color name="color_secondary_container">#FFEDD5</color>
+    <color name="color_secondary_dark">#EA6C0A</color>
+    <color name="color_secondary_light">#FB923C</color>
+    <color name="color_secondary_night">#FDBA74</color>
+    <color name="color_shadow_medium">#14000000</color>
+    <color name="color_shadow_soft">#0A000000</color>
+    <color name="color_shadow_strong">#1F000000</color>
+    <color name="color_success">#22C55E</color>
+    <color name="color_success_container">#DCFCE7</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_surface_night">#1E293B</color>
+    <color name="color_surface_tint">#EFF6FF</color>
+    <color name="color_surface_variant">#F1F5F9</color>
+    <color name="color_surface_variant_night">#334155</color>
+    <color name="color_tertiary">#10B981</color>
+    <color name="color_tertiary_container">#D1FAE5</color>
+    <color name="color_tertiary_dark">#059669</color>
+    <color name="color_text_disabled">#CBD5E1</color>
+    <color name="color_text_link">#1A56DB</color>
+    <color name="color_text_on_primary">#FFFFFF</color>
+    <color name="color_text_primary">#0F172A</color>
+    <color name="color_text_secondary">#475569</color>
+    <color name="color_text_tertiary">#94A3B8</color>
+    <color name="color_top_app_bar_background">#FFFFFF</color>
+    <color name="color_warning">#F59E0B</color>
+    <color name="color_warning_container">#FEF3C7</color>
+    <color name="transparent">#00000000</color>
+    <dimen name="app_bar_height">56dp</dimen>
+    <dimen name="app_bar_title_size">18sp</dimen>
+    <dimen name="avatar_lg">72dp</dimen>
+    <dimen name="avatar_md">48dp</dimen>
+    <dimen name="avatar_sm">32dp</dimen>
+    <dimen name="avatar_xl">96dp</dimen>
+    <dimen name="avatar_xs">24dp</dimen>
+    <dimen name="badge_padding_horizontal">6dp</dimen>
+    <dimen name="badge_padding_vertical">2dp</dimen>
+    <dimen name="badge_size">20dp</dimen>
+    <dimen name="badge_text_size">10sp</dimen>
+    <dimen name="banner_height">180dp</dimen>
+    <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+    <dimen name="bottom_nav_label_size">11sp</dimen>
+    <dimen name="bottom_sheet_drag_handle_height">4dp</dimen>
+    <dimen name="bottom_sheet_drag_handle_width">32dp</dimen>
+    <dimen name="bottom_sheet_peek_height">300dp</dimen>
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="btn_height_large">56dp</dimen>
+    <dimen name="btn_height_small">36dp</dimen>
+    <dimen name="btn_icon_size">20dp</dimen>
+    <dimen name="btn_min_width">88dp</dimen>
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="card_category_size">80dp</dimen>
+    <dimen name="card_dashboard_stat_height">120dp</dimen>
+    <dimen name="card_min_height">80dp</dimen>
+    <dimen name="card_product_width">160dp</dimen>
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="chip_icon_size">18dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_indent">16dp</dimen>
+    <dimen name="drawer_header_height">180dp</dimen>
+    <dimen name="drawer_item_height">48dp</dimen>
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="elevation_app_bar">0dp</dimen>
+    <dimen name="elevation_bottom_nav">8dp</dimen>
+    <dimen name="elevation_bottom_sheet">8dp</dimen>
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_card_pressed">8dp</dimen>
+    <dimen name="elevation_dialog">24dp</dimen>
+    <dimen name="elevation_fab">6dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_snackbar">6dp</dimen>
+    <dimen name="elevation_xl">12dp</dimen>
+    <dimen name="elevation_xs">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_mini_size">40dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="grid_item_spacing">6dp</dimen>
+    <dimen name="grid_spacing">8dp</dimen>
+    <dimen name="hero_height">220dp</dimen>
+    <dimen name="icon_empty_state">80dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+    <dimen name="icon_xs">16dp</dimen>
+    <dimen name="icon_xxl">64dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_height_multiline">120dp</dimen>
+    <dimen name="margin_card">8dp</dimen>
+    <dimen name="margin_card_horizontal">16dp</dimen>
+    <dimen name="margin_fab_bottom">88dp</dimen>
+    <dimen name="margin_lg">24dp</dimen>
+    <dimen name="margin_list_item_vertical">6dp</dimen>
+    <dimen name="margin_md">16dp</dimen>
+    <dimen name="margin_section">24dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="padding_bottom_nav">8dp</dimen>
+    <dimen name="padding_bottom_sheet_top">12dp</dimen>
+    <dimen name="padding_button_horizontal">24dp</dimen>
+    <dimen name="padding_card">16dp</dimen>
+    <dimen name="padding_card_small">12dp</dimen>
+    <dimen name="padding_chip_horizontal">12dp</dimen>
+    <dimen name="padding_chip_vertical">6dp</dimen>
+    <dimen name="padding_dialog">24dp</dimen>
+    <dimen name="padding_fab_margin">16dp</dimen>
+    <dimen name="padding_input_field">16dp</dimen>
+    <dimen name="padding_list_item_horizontal">16dp</dimen>
+    <dimen name="padding_list_item_vertical">12dp</dimen>
+    <dimen name="padding_screen">16dp</dimen>
+    <dimen name="padding_screen_horizontal">16dp</dimen>
+    <dimen name="padding_screen_vertical">12dp</dimen>
+    <dimen name="padding_section_header">16dp</dimen>
+    <dimen name="product_image_card">140dp</dimen>
+    <dimen name="product_image_detail_height">300dp</dimen>
+    <dimen name="product_image_grid_height">180dp</dimen>
+    <dimen name="product_image_list">80dp</dimen>
+    <dimen name="product_image_thumbnail">72dp</dimen>
+    <dimen name="progress_bar_height">4dp</dimen>
+    <dimen name="progress_circular_size">48dp</dimen>
+    <dimen name="radius_badge">12dp</dimen>
+    <dimen name="radius_bottom_sheet">16dp</dimen>
+    <dimen name="radius_button">8dp</dimen>
+    <dimen name="radius_card">12dp</dimen>
+    <dimen name="radius_card_large">16dp</dimen>
+    <dimen name="radius_chip">16dp</dimen>
+    <dimen name="radius_dialog">20dp</dimen>
+    <dimen name="radius_full">50dp</dimen>
+    <dimen name="radius_image">8dp</dimen>
+    <dimen name="radius_input">8dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_nav_item">50dp</dimen>
+    <dimen name="radius_none">0dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_xxl">24dp</dimen>
+    <dimen name="snackbar_margin">8dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_none">0dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xxxl">64dp</dimen>
+    <dimen name="splash_logo_size">120dp</dimen>
+    <dimen name="stroke_none">0dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="stroke_width_medium">1.5dp</dimen>
+    <dimen name="stroke_width_thick">2dp</dimen>
+    <dimen name="text_display_lg">28sp</dimen>
+    <dimen name="text_display_md">24sp</dimen>
+    <dimen name="text_display_sm">22sp</dimen>
+    <dimen name="text_display_xl">32sp</dimen>
+    <dimen name="text_headline">36sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <plurals name="catalog_results_quantity">
+        <item quantity="one">1 producto encontrado</item>
+        <item quantity="other">%1$d productos encontrados</item>
+    </plurals>
+    <string name="action_add">Agregar</string>
+    <string name="action_apply">Aplicar</string>
+    <string name="action_back">Volver</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_clear">Limpiar</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_done">Listo</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_next">Siguiente</string>
+    <string name="action_no">No</string>
+    <string name="action_ok">Aceptar</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_remove">Quitar</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_see_more">Ver más</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_skip">Omitir</string>
+    <string name="action_sort">Ordenar</string>
+    <string name="action_undo">Deshacer</string>
+    <string name="action_view_all">Ver todos</string>
+    <string name="action_yes">Sí</string>
+    <string name="added_to_cart_success">Producto agregado al carrito</string>
+    <string name="admin_chart_orders_by_status">Pedidos por estado</string>
+    <string name="admin_chart_users_by_role">Usuarios por rol</string>
+    <string name="admin_dashboard_title">Panel de administrador</string>
+    <string name="admin_dashboard_welcome">Panel de control</string>
+    <string name="admin_metric_format">%1$s: %2$s</string>
+    <string name="admin_no_users_subtitle">Agrega usuarios para que puedan acceder a la plataforma</string>
+    <string name="admin_no_users_title">Sin usuarios registrados</string>
+    <string name="admin_product_management_hint">Gestión global del catálogo</string>
+    <string name="admin_product_selected">Producto seleccionado: %1$s</string>
+    <string name="admin_product_seller_label">Vendedor: %1$s</string>
+    <string name="admin_products_count">%1$d productos en total</string>
+    <string name="admin_products_title">Todos los productos</string>
+    <string name="admin_recent_activity_mock">Última sincronización mock completada</string>
+    <string name="admin_section_quick_actions">Acciones rápidas</string>
+    <string name="admin_section_recent_activity">Actividad reciente</string>
+    <string name="admin_section_system_overview">Resumen del sistema</string>
+    <string name="admin_stat_monthly_revenue">Ingresos del mes</string>
+    <string name="admin_stat_total_orders">Pedidos totales</string>
+    <string name="admin_stat_total_products">Productos en catálogo</string>
+    <string name="admin_stat_total_users">Usuarios registrados</string>
+    <string name="admin_users_count">%1$d usuarios</string>
+    <string name="admin_users_title">Gestión de usuarios</string>
+    <string name="already_in_cart">Ya tienes este producto en tu carrito</string>
+    <string name="app_name">TiendaVirtual</string>
+    <string name="app_tagline">Todo lo que necesitas, en un solo lugar</string>
+    <string name="app_version">Versión %1$s</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="biometric_login_success">Biometría simulada aprobada para %1$s</string>
+    <string name="btn_add_product">Agregar producto</string>
+    <string name="btn_add_to_cart">Agregar al carrito</string>
+    <string name="btn_add_user">Agregar usuario</string>
+    <string name="btn_apply_filters">Aplicar filtros</string>
+    <string name="btn_biometric_login">Ingresar con biometría</string>
+    <string name="btn_buy_now">Comprar ahora</string>
+    <string name="btn_checkout">Proceder al pago</string>
+    <string name="btn_choose_image">Seleccionar imagen</string>
+    <string name="btn_clear_cart">Vaciar carrito</string>
+    <string name="btn_clear_filters">Limpiar filtros</string>
+    <string name="btn_continue_shopping">Explorar catálogo</string>
+    <string name="btn_continue_shopping_after_order">Seguir comprando</string>
+    <string name="btn_edit_profile">Editar perfil</string>
+    <string name="btn_google_login">Continuar con Google</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_login_guest">Continuar como invitado</string>
+    <string name="btn_logout">Cerrar sesión</string>
+    <string name="btn_my_orders">Ver mis pedidos</string>
+    <string name="btn_place_order">Confirmar pedido</string>
+    <string name="btn_reset_password">Actualizar contraseña</string>
+    <string name="btn_save_product">Guardar producto</string>
+    <string name="btn_save_product_changes">Guardar cambios</string>
+    <string name="btn_save_user">Guardar usuario</string>
+    <string name="btn_save_user_changes">Guardar cambios</string>
+    <string name="btn_send_otp">Enviar OTP</string>
+    <string name="btn_send_reset">Enviar instrucciones</string>
+    <string name="btn_track_order">Ver estado del pedido</string>
+    <string name="btn_update_order_status">Actualizar estado</string>
+    <string name="cart_empty_subtitle">Explora nuestro catálogo y encuentra lo que necesitas</string>
+    <string name="cart_empty_title">Tu carrito está vacío</string>
+    <string name="cart_item_removed">Artículo eliminado del carrito</string>
+    <string name="cart_items_count">%1$d artículo(s)</string>
+    <string name="cart_label_discount">Descuento</string>
+    <string name="cart_label_shipping">Envío</string>
+    <string name="cart_label_subtotal">Subtotal</string>
+    <string name="cart_label_total">Total</string>
+    <string name="cart_shipping_free">Gratis</string>
+    <string name="cart_summary_title">Resumen de compra</string>
+    <string name="cart_title">Mi carrito</string>
+    <string name="catalog_no_results">No encontramos productos con esos criterios</string>
+    <string name="catalog_no_results_hint">Intenta ajustar tu búsqueda o filtros</string>
+    <string name="catalog_results_count">%1$d productos encontrados</string>
+    <string name="catalog_results_one">1 producto encontrado</string>
+    <string name="catalog_search_hint">Buscar en el catálogo…</string>
+    <string name="catalog_title">Catálogo</string>
+    <string name="category_all">Todos</string>
+    <string name="category_beauty">Belleza</string>
+    <string name="category_books">Libros</string>
+    <string name="category_clothing">Ropa y moda</string>
+    <string name="category_electronics">Electrónica</string>
+    <string name="category_food">Alimentos</string>
+    <string name="category_home">Hogar</string>
+    <string name="category_other">Otros</string>
+    <string name="category_sports">Deportes</string>
+    <string name="category_toys">Juguetes</string>
+    <string name="cd_add_to_cart">Agregar %1$s al carrito</string>
+    <string name="cd_app_logo">Logo de TiendaVirtual</string>
+    <string name="cd_back_button">Volver</string>
+    <string name="cd_cart_badge">%1$d artículos en el carrito</string>
+    <string name="cd_cart_button">Ir al carrito</string>
+    <string name="cd_close_bottom_sheet">Cerrar panel</string>
+    <string name="cd_decrease_quantity">Disminuir cantidad</string>
+    <string name="cd_delete_item">Eliminar %1$s</string>
+    <string name="cd_edit_item">Editar %1$s</string>
+    <string name="cd_filter_button">Filtrar resultados</string>
+    <string name="cd_increase_quantity">Aumentar cantidad</string>
+    <string name="cd_product_image">Imagen del producto %1$s</string>
+    <string name="cd_product_image_generic">Imagen del producto</string>
+    <string name="cd_search_button">Buscar</string>
+    <string name="cd_user_avatar">Avatar de %1$s</string>
+    <string name="checkout_order_preview">Productos en carrito: %1$d</string>
+    <string name="checkout_section_address">Dirección de envío</string>
+    <string name="checkout_section_payment">Método de pago</string>
+    <string name="checkout_section_summary">Resumen del pedido</string>
+    <string name="checkout_title">Resumen del pedido</string>
+    <string name="create_product_title">Nuevo producto</string>
+    <string name="create_user_title">Nuevo usuario</string>
+    <string name="dialog_activate_user_message">¿Deseas activar la cuenta de \"%1$s\"?</string>
+    <string name="dialog_block_user_message">¿Deseas bloquear a \"%1$s\"? No podrá acceder a la aplicación.</string>
+    <string name="dialog_clear_cart_message">¿Estás seguro de que deseas eliminar todos los artículos del carrito?</string>
+    <string name="dialog_clear_cart_title">Vaciar carrito</string>
+    <string name="dialog_delete_product_message">¿Estás seguro de que deseas eliminar \"%1$s\"? Esta acción no se puede deshacer.</string>
+    <string name="dialog_delete_product_title">Eliminar producto</string>
+    <string name="dialog_delete_user_message">¿Estás seguro de que deseas eliminar a \"%1$s\"? Esta acción no se puede deshacer.</string>
+    <string name="dialog_delete_user_title">Eliminar usuario</string>
+    <string name="dialog_logout_message">¿Estás seguro de que deseas cerrar sesión?</string>
+    <string name="dialog_logout_title">Cerrar sesión</string>
+    <string name="dialog_toggle_user_status_title">Cambiar estado</string>
+    <string name="drawer_close_label">Cerrar menú</string>
+    <string name="drawer_menu_label">Menú</string>
+    <string name="edit_product_title">Editar producto</string>
+    <string name="edit_user_title">Editar usuario</string>
+    <string name="error_address_required">Ingresa tu dirección de envío</string>
+    <string name="error_city_required">Ingresa tu ciudad</string>
+    <string name="error_email_empty">Ingresa tu correo electrónico</string>
+    <string name="error_email_invalid">Ingresa un correo electrónico válido</string>
+    <string name="error_email_not_found">No encontramos una cuenta con ese correo</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="error_generic">Ha ocurrido un error inesperado. Por favor, intenta de nuevo.</string>
+    <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
+    <string name="error_invalid_format">Formato inválido</string>
+    <string name="error_name_required">Ingresa tu nombre completo</string>
+    <string name="error_no_internet">Sin conexión a internet. Verifica tu red e intenta de nuevo.</string>
+    <string name="error_no_results">No encontramos resultados</string>
+    <string name="error_otp_empty">Ingresa el código OTP</string>
+    <string name="error_otp_invalid">El código OTP no es válido</string>
+    <string name="error_password_empty">Ingresa tu contraseña</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_phone_invalid">Ingresa un número de teléfono válido</string>
+    <string name="error_phone_required">Ingresa tu número de teléfono</string>
+    <string name="error_product_category_required">Selecciona una categoría</string>
+    <string name="error_product_description_required">Ingresa una descripción del producto</string>
+    <string name="error_product_discount_invalid">El descuento debe estar entre 0 y 99</string>
+    <string name="error_product_name_required">Ingresa el nombre del producto</string>
+    <string name="error_product_name_short">El nombre debe tener al menos 3 caracteres</string>
+    <string name="error_product_price_invalid">Ingresa un precio válido (mayor a cero)</string>
+    <string name="error_product_price_required">Ingresa el precio del producto</string>
+    <string name="error_product_stock_invalid">El stock debe ser cero o mayor</string>
+    <string name="error_product_stock_required">Ingresa el stock disponible</string>
+    <string name="error_server">Error en el servidor. Por favor, intenta más tarde.</string>
+    <string name="error_timeout">La solicitud tardó demasiado. Por favor, intenta de nuevo.</string>
+    <string name="error_user_email_invalid">Ingresa un correo válido para el usuario</string>
+    <string name="error_user_email_required">Ingresa el correo del usuario</string>
+    <string name="error_user_name_required">Ingresa el nombre del usuario</string>
+    <string name="error_user_password_required">Ingresa una contraseña temporal</string>
+    <string name="error_user_password_short">La contraseña temporal debe tener al menos 6 caracteres</string>
+    <string name="error_user_phone_required">Ingresa el teléfono del usuario</string>
+    <string name="error_user_role_required">Selecciona un rol para el usuario</string>
+    <string name="filter_all_categories">Todas las categorías</string>
+    <string name="filter_available_only">Disponibles</string>
+    <string name="filter_category">Categoría</string>
+    <string name="filter_max_price">Precio máximo</string>
+    <string name="filter_min_price">Precio mínimo</string>
+    <string name="filter_price_range">Rango de precio</string>
+    <string name="filter_role_all">Todos los roles</string>
+    <string name="filter_sheet_title">Filtros</string>
+    <string name="forgot_password_otp_helper">Usa el OTP simulado mostrado en pantalla para crear una nueva contraseña.</string>
+    <string name="forgot_password_subtitle">Ingresa tu correo y te enviaremos instrucciones para restablecer tu contraseña</string>
+    <string name="forgot_password_title">Recuperar contraseña</string>
+    <string name="format_currency_millions">$ %.1fM</string>
+    <string name="format_currency_thousands">$ %1$dK</string>
+    <string name="format_percentage">%1$d%%</string>
+    <string name="format_price">$%1$s</string>
+    <string name="format_quantity">× %1$d</string>
+    <string name="format_stock">%1$d en stock</string>
+    <string name="google_login_simulated">Inicio de sesión con Google simulado</string>
+    <string name="hint_address">Calle 123 # 45-67, Apto 8</string>
+    <string name="hint_city">Bogotá</string>
+    <string name="hint_confirm_password">Repite tu nueva contraseña</string>
+    <string name="hint_email">ejemplo@correo.com</string>
+    <string name="hint_full_name">Juan Pérez</string>
+    <string name="hint_otp">Ingresa el código recibido</string>
+    <string name="hint_password">Mínimo 6 caracteres</string>
+    <string name="hint_phone">+57 300 000 0000</string>
+    <string name="hint_product_description">Describe tu producto detalladamente…</string>
+    <string name="hint_product_discount">Ej: 15</string>
+    <string name="hint_product_name">Ej: Camiseta deportiva azul</string>
+    <string name="hint_product_price">Ej: 50000</string>
+    <string name="hint_product_stock">Ej: 100</string>
+    <string name="hint_user_name">Nombre y apellido</string>
+    <string name="hint_user_password">Mínimo 6 caracteres</string>
+    <string name="hint_user_phone">300 000 0000</string>
+    <string name="hint_user_role">Administrador, vendedor o comprador</string>
+    <string name="hint_zip_code">110111</string>
+    <string name="home_banner_discount">%1$d%% de descuento</string>
+    <string name="home_banner_one_subtitle">Encuentra productos destacados para cada día</string>
+    <string name="home_banner_one_title">Compra fácil y rápido</string>
+    <string name="home_banner_three_subtitle">Flujo académico listo para probar compras</string>
+    <string name="home_banner_three_title">Envíos simulados</string>
+    <string name="home_banner_two_subtitle">Tecnología, hogar y moda en un solo lugar</string>
+    <string name="home_banner_two_title">Ofertas seleccionadas</string>
+    <string name="home_empty_featured">No hay productos destacados</string>
+    <string name="home_greeting">Hola, %1$s</string>
+    <string name="home_greeting_guest">Hola, explorador</string>
+    <string name="home_search_hint">Buscar productos…</string>
+    <string name="home_section_categories">Categorías</string>
+    <string name="home_section_featured">Destacados</string>
+    <string name="home_section_new_arrivals">Nuevos productos</string>
+    <string name="home_section_offers">Ofertas del día</string>
+    <string name="label_address">Dirección</string>
+    <string name="label_city">Ciudad</string>
+    <string name="label_confirm_password">Confirmar contraseña</string>
+    <string name="label_customer">Cliente</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_full_name">Nombre completo</string>
+    <string name="label_items_count">%1$d artículo(s)</string>
+    <string name="label_last_login">Último acceso: %1$s</string>
+    <string name="label_member_since">Miembro desde %1$s</string>
+    <string name="label_new_password">Nueva contraseña</string>
+    <string name="label_order_date">Fecha: %1$s</string>
+    <string name="label_order_id">Pedido #%1$s</string>
+    <string name="label_order_total">Total: $%1$s</string>
+    <string name="label_otp">Código OTP</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_phone">Teléfono</string>
+    <string name="label_product_category">Categoría</string>
+    <string name="label_product_description">Descripción</string>
+    <string name="label_product_discount">Descuento (%)</string>
+    <string name="label_product_image">Imagen del producto</string>
+    <string name="label_product_name">Nombre del producto</string>
+    <string name="label_product_price">Precio (COP)</string>
+    <string name="label_product_stock">Stock disponible</string>
+    <string name="label_select_role">Seleccionar rol</string>
+    <string name="label_user_created">Registrado el %1$s</string>
+    <string name="label_user_email">Correo</string>
+    <string name="label_user_name">Nombre completo</string>
+    <string name="label_user_password">Contraseña temporal</string>
+    <string name="label_user_phone">Teléfono</string>
+    <string name="label_user_role">Rol</string>
+    <string name="label_user_status">Estado</string>
+    <string name="label_zip_code">Código postal</string>
+    <string name="link_back_to_login">Volver al inicio de sesión</string>
+    <string name="link_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_divider_continue">O continúa con</string>
+    <string name="login_remember_me">Recordarme</string>
+    <string name="login_subtitle">Inicia sesión para continuar</string>
+    <string name="login_success_simulated">Inicio de sesión simulado para %1$s</string>
+    <string name="login_title">Bienvenido</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_catalog">Catálogo</string>
+    <string name="nav_checkout">Checkout</string>
+    <string name="nav_dashboard">Resumen</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_orders">Pedidos</string>
+    <string name="nav_product_detail">Detalle del producto</string>
+    <string name="nav_products">Productos</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_reports">Reportes</string>
+    <string name="nav_users">Usuarios</string>
+    <string name="navigation_placeholder_subtitle">Esta pantalla está lista en la navegación y pendiente de implementar.</string>
+    <string name="order_number">Pedido #%1$s</string>
+    <string name="order_status_cancelled">Cancelado</string>
+    <string name="order_status_delivered">Entregado</string>
+    <string name="order_status_pending">Pendiente</string>
+    <string name="order_status_processing">En proceso</string>
+    <string name="order_status_shipped">Enviado</string>
+    <string name="order_status_updated_success">Estado del pedido actualizado</string>
+    <string name="order_success_subtitle">Tu pedido ha sido recibido y está siendo procesado</string>
+    <string name="order_success_title">¡Pedido confirmado!</string>
+    <string name="payment_card">Tarjeta de crédito/débito</string>
+    <string name="payment_cash">Contra entrega</string>
+    <string name="payment_transfer">Transferencia bancaria</string>
+    <string name="product_created_success">Producto creado exitosamente</string>
+    <string name="product_deleted_success">Producto eliminado exitosamente</string>
+    <string name="product_detail_rating_format">Calificación: %1$s</string>
+    <string name="product_detail_title">Detalle del producto</string>
+    <string name="product_free_shipping">Envío gratis</string>
+    <string name="product_image_mock_selected">Imagen simulada seleccionada</string>
+    <string name="product_in_stock">En stock (%1$d disponibles)</string>
+    <string name="product_label_category">Categoría</string>
+    <string name="product_label_description">Descripción</string>
+    <string name="product_label_discount">%1$d%% OFF</string>
+    <string name="product_label_original_price">Precio original</string>
+    <string name="product_label_price">Precio</string>
+    <string name="product_label_quantity">Cantidad</string>
+    <string name="product_label_rating">Calificación</string>
+    <string name="product_label_stock">Disponibilidad</string>
+    <string name="product_low_stock">¡Últimas %1$d unidades!</string>
+    <string name="product_not_found">Producto no encontrado</string>
+    <string name="product_out_of_stock">Sin stock</string>
+    <string name="product_quantity_max">Cantidad máxima alcanzada</string>
+    <string name="product_rating_value">4.8 de 5</string>
+    <string name="product_share_text">¡Mira este producto en TiendaVirtual! %1$s</string>
+    <string name="product_status_active">Activo</string>
+    <string name="product_status_inactive">Inactivo</string>
+    <string name="product_stock_label">Stock: %1$d</string>
+    <string name="product_updated_success">Producto actualizado exitosamente</string>
+    <string name="profile_contact_title">Datos de contacto</string>
+    <string name="profile_no_orders">Aún no tienes pedidos</string>
+    <string name="profile_orders_count">%1$d pedidos realizados</string>
+    <string name="profile_section_info">Información personal</string>
+    <string name="profile_section_orders">Mis pedidos</string>
+    <string name="profile_section_settings">Configuración</string>
+    <string name="profile_title">Mi perfil</string>
+    <string name="report_avg_order_value">Valor promedio por pedido</string>
+    <string name="report_chart_orders">Pedidos por estado</string>
+    <string name="report_chart_revenue">Ingresos por categoría</string>
+    <string name="report_conversion_rate">Tasa de conversión</string>
+    <string name="report_no_data">Sin datos para el período seleccionado</string>
+    <string name="report_period_annual">Este año</string>
+    <string name="report_period_daily">Hoy</string>
+    <string name="report_period_label">Período</string>
+    <string name="report_period_monthly">Este mes</string>
+    <string name="report_period_weekly">Esta semana</string>
+    <string name="report_rank_label">#%1$d</string>
+    <string name="report_section_by_category">Ventas por categoría</string>
+    <string name="report_section_by_period">Ventas por período</string>
+    <string name="report_section_top_products">Productos más vendidos</string>
+    <string name="report_top_product_line">%1$s - %2$d unidades</string>
+    <string name="report_total_orders">Total de pedidos</string>
+    <string name="report_total_revenue">Ingresos totales</string>
+    <string name="report_units_sold">%1$d unidades vendidas</string>
+    <string name="role_admin">Administrador</string>
+    <string name="role_buyer">Comprador</string>
+    <string name="role_seller">Vendedor</string>
+    <string name="sales_report_title">Reporte de ventas</string>
+    <string name="seller_dashboard_title">Panel de vendedor</string>
+    <string name="seller_dashboard_welcome">Bienvenido, %1$s</string>
+    <string name="seller_no_orders_subtitle">Aquí verás los pedidos de tus productos</string>
+    <string name="seller_no_orders_title">Sin pedidos aún</string>
+    <string name="seller_no_products_subtitle">Agrega tu primer producto para comenzar a vender</string>
+    <string name="seller_no_products_title">Sin productos aún</string>
+    <string name="seller_no_recent_orders">No tienes pedidos recientes</string>
+    <string name="seller_order_customer">Cliente: %1$s</string>
+    <string name="seller_order_products">Productos del pedido: %1$d</string>
+    <string name="seller_orders_count">%1$d pedidos</string>
+    <string name="seller_orders_filter_all">Todos</string>
+    <string name="seller_orders_title">Pedidos</string>
+    <string name="seller_products_count">%1$d productos</string>
+    <string name="seller_products_title">Mis productos</string>
+    <string name="seller_profile_title">Perfil de vendedor</string>
+    <string name="seller_quick_actions_title">Accesos rápidos</string>
+    <string name="seller_section_recent_orders">Pedidos recientes</string>
+    <string name="seller_section_top_products">Productos más vendidos</string>
+    <string name="seller_stat_active_products">Productos activos</string>
+    <string name="seller_stat_low_stock">Stock bajo</string>
+    <string name="seller_stat_pending_orders">Pedidos pendientes</string>
+    <string name="seller_stat_total_orders">Pedidos totales</string>
+    <string name="seller_stat_total_revenue">Ingresos totales</string>
+    <string name="seller_stats_label">Estadísticas de ventas</string>
+    <string name="seller_store_name">Nombre de la tienda</string>
+    <string name="seller_total_products_label">Total productos</string>
+    <string name="seller_total_sales_label">Total ventas</string>
+    <string name="simulated_otp_code" translatable="false">123456</string>
+    <string name="sort_name_asc">Nombre: A–Z</string>
+    <string name="sort_name_desc">Nombre: Z–A</string>
+    <string name="sort_newest">Más recientes</string>
+    <string name="sort_price_asc">Precio: menor a mayor</string>
+    <string name="sort_price_desc">Precio: mayor a menor</string>
+    <string name="sort_relevance">Relevancia</string>
+    <string name="sort_sheet_title">Ordenar por</string>
+    <string name="splash_loading">Preparando tu experiencia…</string>
+    <string name="state_empty">Sin resultados</string>
+    <string name="state_error">Algo salió mal</string>
+    <string name="state_loading">Cargando…</string>
+    <string name="success_otp_sent">OTP simulado enviado: %1$s</string>
+    <string name="success_password_updated">Contraseña actualizada correctamente</string>
+    <string name="success_reset_email_sent">Correo enviado. Revisa tu bandeja de entrada.</string>
+    <string name="summary_shipping">Envío: %1$s</string>
+    <string name="summary_subtotal">Subtotal: %1$s</string>
+    <string name="summary_total">Total: %1$s</string>
+    <string name="user_created_success">Usuario creado exitosamente</string>
+    <string name="user_deleted_success">Usuario eliminado exitosamente</string>
+    <string name="user_phone_format">Teléfono: %1$s</string>
+    <string name="user_role_format">Rol: %1$s</string>
+    <string name="user_status_active">Activo</string>
+    <string name="user_status_blocked">Bloqueado</string>
+    <string name="user_status_inactive">Inactivo</string>
+    <string name="user_updated_success">Usuario actualizado exitosamente</string>
+    <style name="Base.Theme.TiendaVirtual" parent="Theme.Material3.DayNight.NoActionBar">
+
+        
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorPrimaryContainer">@color/color_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/color_on_primary_container</item>
+
+        
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/color_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/color_on_secondary_container</item>
+
+        
+        <item name="colorTertiary">@color/color_tertiary</item>
+        <item name="colorOnTertiary">@color/color_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/color_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/color_on_tertiary_container</item>
+
+        
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <item name="colorErrorContainer">@color/color_error_container</item>
+        <item name="colorOnErrorContainer">@color/color_on_error_container</item>
+
+        
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorSurfaceVariant">@color/color_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_variant</item>
+
+        
+        <item name="colorOutline">@color/color_outline</item>
+        <item name="colorOutlineVariant">@color/color_outline_variant</item>
+
+        
+
+        
+        <item name="android:windowBackground">@color/color_background</item>
+
+        
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        
+        <item name="android:navigationBarColor">@color/color_surface</item>
+
+        
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.TiendaVirtual.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.TiendaVirtual.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.TiendaVirtual.LargeComponent</item>
+
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/radius_bottom_sheet</item>
+        <item name="cornerSizeTopRight">@dimen/radius_bottom_sheet</item>
+        <item name="cornerSizeBottomLeft">@dimen/radius_none</item>
+        <item name="cornerSizeBottomRight">@dimen/radius_none</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_button</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.Card" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_card</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.Chip" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_chip</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_dialog</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.FAB" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_lg</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_lg</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_md</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.NavItem" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_nav_item</item>
+    </style>
+    <style name="ShapeAppearance.TiendaVirtual.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_sm</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/color_text_tertiary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:textSize">@dimen/text_display_xl</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">@dimen/text_display_lg</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">@dimen/text_display_md</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_display_sm</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_xxl</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/text_xs</item>
+        <item name="android:textColor">@color/color_text_tertiary</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.Link" parent="TextAppearance.TiendaVirtual.BodyMedium">
+        <item name="android:textColor">@color/color_text_link</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.Price" parent="TextAppearance.TiendaVirtual.TitleMedium">
+        <item name="android:textColor">@color/color_price</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.Price.Large" parent="TextAppearance.TiendaVirtual.HeadlineSmall">
+        <item name="android:textColor">@color/color_price</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.PriceOriginal" parent="TextAppearance.TiendaVirtual.BodySmall">
+        <item name="android:textColor">@color/color_price_original</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.TiendaVirtual.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Theme.TiendaVirtual" parent="Base.Theme.TiendaVirtual"/>
+    <style name="Theme.TiendaVirtual.FullScreen" parent="Base.Theme.TiendaVirtual">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.TiendaVirtual.Splash" parent="Base.Theme.TiendaVirtual">
+        <item name="android:windowBackground">@color/color_primary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="ThemeOverlay.TiendaVirtual.AppBar.Light" parent="ThemeOverlay.Material3.Light">
+        <item name="colorSurface">@color/color_top_app_bar_background</item>
+        <item name="colorOnSurface">@color/color_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/color_text_secondary</item>
+    </style>
+    <style name="ThemeOverlay.TiendaVirtual.AppBar.Primary" parent="ThemeOverlay.Material3.Dark">
+        <item name="colorSurface">@color/color_primary</item>
+        <item name="colorOnSurface">@color/color_on_primary</item>
+        <item name="colorOnSurfaceVariant">@color/color_primary_light</item>
+    </style>
+    <style name="ThemeOverlay.TiendaVirtual.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.TiendaVirtual.LargeComponent</item>
+    </style>
+    <style name="Widget.TiendaVirtual.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/color_bottom_nav_background</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">@dimen/elevation_bottom_nav</item>
+        <item name="itemRippleColor">@color/color_ripple_primary</item>
+        <item name="itemIconTint">@null</item>
+        <item name="itemTextColor">@null</item>
+    </style>
+    <style name="Widget.TiendaVirtual.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="android:background">@color/color_surface</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.TiendaVirtual.BottomSheet</item>
+        <item name="backgroundTint">@color/color_surface</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Danger" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="backgroundTint">@color/color_error</item>
+        <item name="android:textColor">@color/color_on_error</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:paddingStart">@dimen/padding_button_horizontal</item>
+        <item name="android:paddingEnd">@dimen/padding_button_horizontal</item>
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:paddingStart">@dimen/padding_button_horizontal</item>
+        <item name="android:paddingEnd">@dimen/padding_button_horizontal</item>
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="rippleColor">@color/color_ripple_on_dark</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Secondary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:paddingStart">@dimen/padding_button_horizontal</item>
+        <item name="android:paddingEnd">@dimen/padding_button_horizontal</item>
+        <item name="backgroundTint">@color/color_secondary</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Small" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/btn_height_small</item>
+        <item name="cornerRadius">@dimen/radius_sm</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="rippleColor">@color/color_ripple_primary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="backgroundTint">@color/color_primary_container</item>
+        <item name="android:textColor">@color/color_on_primary_container</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardBackgroundColor">@color/color_surface</item>
+        <item name="contentPadding">@dimen/padding_card</item>
+        <item name="rippleColor">@color/color_ripple_primary</item>
+        <item name="strokeColor">@color/transparent</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Card.Flat" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+        <item name="cardBackgroundColor">@color/color_surface_variant</item>
+        <item name="contentPadding">@dimen/padding_card</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+        <item name="cardBackgroundColor">@color/color_surface</item>
+        <item name="strokeColor">@color/color_outline</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="contentPadding">@dimen/padding_card</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Card.Product" parent="Widget.TiendaVirtual.Card">
+        <item name="contentPadding">@dimen/spacing_none</item>
+        <item name="cardCornerRadius">@dimen/radius_card_large</item>
+        <item name="cardElevation">@dimen/elevation_sm</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Card.Stat" parent="Widget.TiendaVirtual.Card.Flat">
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="contentPadding">@dimen/padding_card</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Checkbox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/color_primary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Chip.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">@dimen/radius_chip</item>
+        <item name="chipMinHeight">@dimen/chip_height</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="chipStrokeColor">@color/color_outline</item>
+        <item name="chipStrokeWidth">@dimen/stroke_width</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="chipBackgroundColor">@color/color_surface</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Chip.Status" parent="Widget.Material3.Chip.Assist">
+        <item name="chipCornerRadius">@dimen/radius_chip</item>
+        <item name="chipMinHeight">@dimen/chip_height</item>
+        <item name="chipStrokeWidth">@dimen/stroke_none</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="chipIconSize">@dimen/chip_icon_size</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Chip.Suggestion" parent="Widget.Material3.Chip.Suggestion">
+        <item name="chipCornerRadius">@dimen/radius_chip</item>
+        <item name="chipMinHeight">@dimen/chip_height</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="chipBackgroundColor">@color/color_primary_container</item>
+        <item name="android:textColor">@color/color_on_primary_container</item>
+        <item name="chipStrokeWidth">@dimen/stroke_none</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Dialog" parent="ThemeOverlay.TiendaVirtual.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Widget.TiendaVirtual.DiscountBadge" parent="TextAppearance.TiendaVirtual.LabelSmall">
+        <item name="android:textColor">@color/color_discount_badge_text</item>
+        <item name="android:background">@color/color_discount_badge</item>
+        <item name="android:paddingStart">@dimen/badge_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/badge_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/badge_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/badge_padding_vertical</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Divider" parent="Widget.Material3.MaterialDivider">
+        <item name="dividerColor">@color/color_outline_variant</item>
+        <item name="dividerThickness">@dimen/divider_height</item>
+        <item name="dividerInsetStart">@dimen/divider_indent</item>
+        <item name="dividerInsetEnd">@dimen/divider_indent</item>
+    </style>
+    <style name="Widget.TiendaVirtual.EmptyState.Subtitle" parent="TextAppearance.TiendaVirtual.BodyMedium">
+        <item name="android:textColor">@color/color_text_tertiary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="Widget.TiendaVirtual.EmptyState.Title" parent="TextAppearance.TiendaVirtual.HeadlineSmall">
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="Widget.TiendaVirtual.FAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="tint">@color/color_on_primary</item>
+        <item name="elevation">@dimen/elevation_fab</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.TiendaVirtual.FAB</item>
+        <item name="rippleColor">@color/color_ripple_on_dark</item>
+    </style>
+    <style name="Widget.TiendaVirtual.FAB.Extended" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="iconTint">@color/color_on_primary</item>
+        <item name="elevation">@dimen/elevation_fab</item>
+    </style>
+    <style name="Widget.TiendaVirtual.NavigationView" parent="Widget.Material3.NavigationView">
+        <item name="android:background">@color/color_surface</item>
+        <item name="itemTextColor">@color/color_text_primary</item>
+        <item name="itemIconTint">@color/color_primary</item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.TiendaVirtual.NavItem</item>
+        <item name="itemShapeFillColor">@color/color_primary_container</item>
+    </style>
+    <style name="Widget.TiendaVirtual.OrderBadge.Cancelled" parent="Widget.TiendaVirtual.Chip.Status">
+        <item name="chipBackgroundColor">@color/color_order_cancelled_container</item>
+        <item name="android:textColor">@color/color_order_cancelled</item>
+    </style>
+    <style name="Widget.TiendaVirtual.OrderBadge.Delivered" parent="Widget.TiendaVirtual.Chip.Status">
+        <item name="chipBackgroundColor">@color/color_order_delivered_container</item>
+        <item name="android:textColor">@color/color_order_delivered</item>
+    </style>
+    <style name="Widget.TiendaVirtual.OrderBadge.Pending" parent="Widget.TiendaVirtual.Chip.Status">
+        <item name="chipBackgroundColor">@color/color_order_pending_container</item>
+        <item name="android:textColor">@color/color_order_pending</item>
+    </style>
+    <style name="Widget.TiendaVirtual.OrderBadge.Processing" parent="Widget.TiendaVirtual.Chip.Status">
+        <item name="chipBackgroundColor">@color/color_order_processing_container</item>
+        <item name="android:textColor">@color/color_order_processing</item>
+    </style>
+    <style name="Widget.TiendaVirtual.OrderBadge.Shipped" parent="Widget.TiendaVirtual.Chip.Status">
+        <item name="chipBackgroundColor">@color/color_order_shipped_container</item>
+        <item name="android:textColor">@color/color_order_shipped</item>
+    </style>
+    <style name="Widget.TiendaVirtual.ProgressBar.Circular" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/color_primary</item>
+        <item name="trackColor">@color/color_primary_container</item>
+    </style>
+    <style name="Widget.TiendaVirtual.ProgressBar.Linear" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/color_primary</item>
+        <item name="trackColor">@color/color_primary_container</item>
+        <item name="trackThickness">@dimen/progress_bar_height</item>
+        <item name="trackCornerRadius">@dimen/radius_full</item>
+    </style>
+    <style name="Widget.TiendaVirtual.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/color_primary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.RoleBadge" parent="TextAppearance.TiendaVirtual.LabelSmall">
+        <item name="android:paddingStart">@dimen/spacing_sm</item>
+        <item name="android:paddingEnd">@dimen/spacing_sm</item>
+        <item name="android:paddingTop">@dimen/badge_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/badge_padding_vertical</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Widget.TiendaVirtual.SectionHeader" parent="TextAppearance.TiendaVirtual.TitleMedium">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:paddingTop">@dimen/spacing_sm</item>
+        <item name="android:paddingBottom">@dimen/spacing_sm</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Slider" parent="Widget.Material3.Slider">
+        <item name="thumbColor">@color/color_primary</item>
+        <item name="trackColorActive">@color/color_primary</item>
+        <item name="trackColorInactive">@color/color_primary_container</item>
+        <item name="haloColor">@color/color_ripple_primary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="android:layout_margin">@dimen/snackbar_margin</item>
+        <item name="backgroundTint">@color/color_on_surface</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+    <style name="Widget.TiendaVirtual.StatCard.Label" parent="TextAppearance.TiendaVirtual.BodySmall">
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.StatCard.Value" parent="TextAppearance.TiendaVirtual.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Widget.TiendaVirtual.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/color_on_primary</item>
+        <item name="trackTint">@color/color_primary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_input</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_input</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_input</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_input</item>
+        <item name="boxStrokeColor">@color/color_outline</item>
+        <item name="boxStrokeWidth">@dimen/stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/stroke_width_medium</item>
+        <item name="hintTextColor">@color/color_primary</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+    </style>
+    <style name="Widget.TiendaVirtual.TextInputLayout.Filled" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_input</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_input</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_none</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_none</item>
+        <item name="boxBackgroundColor">@color/color_surface_variant</item>
+        <item name="hintTextColor">@color/color_primary</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+    </style>
+    <style name="Widget.TiendaVirtual.TextInputLayout.Search" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_full</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_full</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_full</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_full</item>
+        <item name="boxBackgroundColor">@color/color_surface_variant</item>
+        <item name="boxStrokeWidth">@dimen/stroke_none</item>
+        <item name="boxStrokeWidthFocused">@dimen/stroke_none</item>
+        <item name="hintTextColor">@color/color_text_tertiary</item>
+    </style>
+    <style name="Widget.TiendaVirtual.TopAppBar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="android:background">@color/color_top_app_bar_background</item>
+        <item name="titleTextColor">@color/color_text_primary</item>
+        <item name="subtitleTextColor">@color/color_text_secondary</item>
+        <item name="elevation">@dimen/elevation_app_bar</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.TiendaVirtual.TitleLarge</item>
+    </style>
+    <style name="Widget.TiendaVirtual.TopAppBar.Primary" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/color_primary</item>
+        <item name="titleTextColor">@color/color_on_primary</item>
+        <item name="subtitleTextColor">@color/color_primary_light</item>
+        <item name="elevation">@dimen/elevation_app_bar</item>
+    </style>
+</resources>

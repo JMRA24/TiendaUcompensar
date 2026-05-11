@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.TiendaVirtual.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_card">
+
+                <TextView
+                    android:id="@+id/sellerName"
+                    style="@style/TextAppearance.TiendaVirtual.HeadlineMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/sellerEmail"
+                    style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_sm" />
+
+                <TextView
+                    android:id="@+id/sellerPhone"
+                    style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_sm" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Widget.TiendaVirtual.SectionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/seller_stats_label" />
+
+        <TextView
+            android:id="@+id/sellerProductsStat"
+            style="@style/TextAppearance.TiendaVirtual.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sellerSalesStat"
+            style="@style/TextAppearance.TiendaVirtual.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

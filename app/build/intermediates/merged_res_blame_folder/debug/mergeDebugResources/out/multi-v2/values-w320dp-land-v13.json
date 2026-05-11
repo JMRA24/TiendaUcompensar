@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.store.app-mergeDebugResources-47:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Julian\\.gradle\\caches\\transforms-3\\ecd68b052608a93f6deb48b4c42d619b\\transformed\\material-1.12.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,110",
+                        "endColumns": "54,61",
+                        "endOffsets": "105,167"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================================================== -->
+    <!-- ESPACIADO BASE (escala de 4dp)                                      -->
+    <!-- ================================================================== -->
+    <dimen name="spacing_none">0dp</dimen>
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    <dimen name="spacing_xxxl">64dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- PADDING SEMÁNTICO                                                   -->
+    <!-- ================================================================== -->
+    <dimen name="padding_screen">16dp</dimen>
+    <dimen name="padding_screen_horizontal">16dp</dimen>
+    <dimen name="padding_screen_vertical">12dp</dimen>
+    <dimen name="padding_card">16dp</dimen>
+    <dimen name="padding_card_small">12dp</dimen>
+    <dimen name="padding_list_item_horizontal">16dp</dimen>
+    <dimen name="padding_list_item_vertical">12dp</dimen>
+    <dimen name="padding_chip_horizontal">12dp</dimen>
+    <dimen name="padding_chip_vertical">6dp</dimen>
+    <dimen name="padding_button_horizontal">24dp</dimen>
+    <dimen name="padding_input_field">16dp</dimen>
+    <dimen name="padding_section_header">16dp</dimen>
+    <dimen name="padding_bottom_nav">8dp</dimen>
+    <dimen name="padding_fab_margin">16dp</dimen>
+    <dimen name="padding_dialog">24dp</dimen>
+    <dimen name="padding_bottom_sheet_top">12dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- MARGIN SEMÁNTICO                                                    -->
+    <!-- ================================================================== -->
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_md">16dp</dimen>
+    <dimen name="margin_lg">24dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="margin_card">8dp</dimen>
+    <dimen name="margin_card_horizontal">16dp</dimen>
+    <dimen name="margin_list_item_vertical">6dp</dimen>
+    <dimen name="margin_section">24dp</dimen>
+    <dimen name="margin_fab_bottom">88dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- BORDER RADIUS                                                       -->
+    <!-- ================================================================== -->
+    <dimen name="radius_none">0dp</dimen>
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="radius_xxl">24dp</dimen>
+    <dimen name="radius_full">50dp</dimen>
+
+    <!-- Alias semánticos -->
+    <dimen name="radius_card">12dp</dimen>
+    <dimen name="radius_card_large">16dp</dimen>
+    <dimen name="radius_button">8dp</dimen>
+    <dimen name="radius_chip">16dp</dimen>
+    <dimen name="radius_image">8dp</dimen>
+    <dimen name="radius_badge">12dp</dimen>
+    <dimen name="radius_input">8dp</dimen>
+    <dimen name="radius_bottom_sheet">16dp</dimen>
+    <dimen name="radius_dialog">20dp</dimen>
+    <dimen name="radius_nav_item">50dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- ELEVACIÓN                                                           -->
+    <!-- ================================================================== -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_xs">1dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_xl">12dp</dimen>
+
+    <!-- Alias semánticos -->
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_card_pressed">8dp</dimen>
+    <dimen name="elevation_app_bar">0dp</dimen>
+    <dimen name="elevation_bottom_nav">8dp</dimen>
+    <dimen name="elevation_fab">6dp</dimen>
+    <dimen name="elevation_dialog">24dp</dimen>
+    <dimen name="elevation_bottom_sheet">8dp</dimen>
+    <dimen name="elevation_snackbar">6dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- TIPOGRAFÍA — Tamaños de texto                                       -->
+    <!-- ================================================================== -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <dimen name="text_display_sm">22sp</dimen>
+    <dimen name="text_display_md">24sp</dimen>
+    <dimen name="text_display_lg">28sp</dimen>
+    <dimen name="text_display_xl">32sp</dimen>
+    <dimen name="text_headline">36sp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Top App Bar                                           -->
+    <!-- ================================================================== -->
+    <dimen name="app_bar_height">56dp</dimen>
+    <dimen name="app_bar_title_size">18sp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Bottom Navigation                                     -->
+    <!-- ================================================================== -->
+    <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+    <dimen name="bottom_nav_label_size">11sp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Botones                                               -->
+    <!-- ================================================================== -->
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="btn_height_small">36dp</dimen>
+    <dimen name="btn_height_large">56dp</dimen>
+    <dimen name="btn_min_width">88dp</dimen>
+    <dimen name="btn_icon_size">20dp</dimen>
+    <dimen name="btn_text_size">14sp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Iconos                                                -->
+    <!-- ================================================================== -->
+    <dimen name="icon_xs">16dp</dimen>
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+    <dimen name="icon_xxl">64dp</dimen>
+    <dimen name="icon_empty_state">80dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Avatares                                              -->
+    <!-- ================================================================== -->
+    <dimen name="avatar_xs">24dp</dimen>
+    <dimen name="avatar_sm">32dp</dimen>
+    <dimen name="avatar_md">48dp</dimen>
+    <dimen name="avatar_lg">72dp</dimen>
+    <dimen name="avatar_xl">96dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Imágenes de producto                                  -->
+    <!-- ================================================================== -->
+    <dimen name="product_image_grid_height">180dp</dimen>
+    <dimen name="product_image_detail_height">300dp</dimen>
+    <dimen name="product_image_thumbnail">72dp</dimen>
+    <dimen name="product_image_card">140dp</dimen>
+    <dimen name="product_image_list">80dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Tarjetas                                              -->
+    <!-- ================================================================== -->
+    <dimen name="card_min_height">80dp</dimen>
+    <dimen name="card_product_width">160dp</dimen>
+    <dimen name="card_category_size">80dp</dimen>
+    <dimen name="card_dashboard_stat_height">120dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Campos de texto (TextInputLayout)                     -->
+    <!-- ================================================================== -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_height_multiline">120dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Chips                                                 -->
+    <!-- ================================================================== -->
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="chip_icon_size">18dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Badges / Etiquetas                                    -->
+    <!-- ================================================================== -->
+    <dimen name="badge_size">20dp</dimen>
+    <dimen name="badge_text_size">10sp</dimen>
+    <dimen name="badge_padding_horizontal">6dp</dimen>
+    <dimen name="badge_padding_vertical">2dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Divisores                                             -->
+    <!-- ================================================================== -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_indent">16dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — FAB (Floating Action Button)                          -->
+    <!-- ================================================================== -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_mini_size">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Navigation Drawer                                     -->
+    <!-- ================================================================== -->
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="drawer_header_height">180dp</dimen>
+    <dimen name="drawer_item_height">48dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Banner / Hero                                         -->
+    <!-- ================================================================== -->
+    <dimen name="banner_height">180dp</dimen>
+    <dimen name="hero_height">220dp</dimen>
+    <dimen name="splash_logo_size">120dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Progress Indicators                                   -->
+    <!-- ================================================================== -->
+    <dimen name="progress_bar_height">4dp</dimen>
+    <dimen name="progress_circular_size">48dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Grid                                                  -->
+    <!-- ================================================================== -->
+    <dimen name="grid_spacing">8dp</dimen>
+    <dimen name="grid_item_spacing">6dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Stroke / Bordes                                       -->
+    <!-- ================================================================== -->
+    <dimen name="stroke_none">0dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="stroke_width_medium">1.5dp</dimen>
+    <dimen name="stroke_width_thick">2dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Bottom Sheet                                          -->
+    <!-- ================================================================== -->
+    <dimen name="bottom_sheet_drag_handle_width">32dp</dimen>
+    <dimen name="bottom_sheet_drag_handle_height">4dp</dimen>
+    <dimen name="bottom_sheet_peek_height">300dp</dimen>
+
+    <!-- ================================================================== -->
+    <!-- COMPONENTES — Snackbar                                              -->
+    <!-- ================================================================== -->
+    <dimen name="snackbar_margin">8dp</dimen>
+
+</resources>

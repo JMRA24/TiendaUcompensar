@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productNameLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_product_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productPriceLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:hint="@string/label_product_price">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productPriceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_product_price"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productDescriptionLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:hint="@string/label_product_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productDescriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height_multiline"
+                android:gravity="top"
+                android:hint="@string/hint_product_description"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productCategoryLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:hint="@string/label_product_category">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productCategoryInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/filter_all_categories"
+                android:inputType="textCapWords" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productStockLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:hint="@string/label_product_stock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productStockInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_product_stock"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productDiscountLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:hint="@string/label_product_discount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productDiscountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_product_discount"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chooseImageButton"
+            style="@style/Widget.TiendaVirtual.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:text="@string/btn_choose_image" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveProductButton"
+            style="@style/Widget.TiendaVirtual.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/btn_save_product" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Fondo de botón primario con efecto ripple Material 3.
+    La máscara (@android:id/mask) confina el ripple al shape redondeado.
+    El selector interno maneja el estado disabled sin anular el ripple.
+    Uso: android:background="@drawable/bg_rounded_button"
+-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/color_ripple_on_dark">
+
+    <!-- Máscara: limita el ripple al contorno redondeado del botón -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_button" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <!-- Contenido: cambia color según estado enabled/disabled -->
+    <item>
+        <selector>
+
+            <!-- Estado: deshabilitado -->
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/radius_button" />
+                    <solid android:color="@color/color_text_disabled" />
+                </shape>
+            </item>
+
+            <!-- Estado: con foco (teclado/accesibilidad) -->
+            <item android:state_focused="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/radius_button" />
+                    <solid android:color="@color/color_primary_dark" />
+                    <stroke
+                        android:width="@dimen/stroke_width_thick"
+                        android:color="@color/color_primary_light" />
+                </shape>
+            </item>
+
+            <!-- Estado normal (el ripple gestiona el press) -->
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/radius_button" />
+                    <solid android:color="@color/color_primary" />
+                </shape>
+            </item>
+
+        </selector>
+    </item>
+
+</ripple>

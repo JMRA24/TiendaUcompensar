@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.TiendaVirtual.Card.Stat"
+                android:layout_width="@dimen/spacing_none"
+                android:layout_height="@dimen/card_dashboard_stat_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="@dimen/margin_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_card">
+
+                    <TextView
+                        android:id="@+id/reportTotalRevenue"
+                        style="@style/Widget.TiendaVirtual.StatCard.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/Widget.TiendaVirtual.StatCard.Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/report_total_revenue" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.TiendaVirtual.Card.Stat"
+                android:layout_width="@dimen/spacing_none"
+                android:layout_height="@dimen/card_dashboard_stat_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="@dimen/margin_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_card">
+
+                    <TextView
+                        android:id="@+id/reportTotalOrders"
+                        style="@style/Widget.TiendaVirtual.StatCard.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/Widget.TiendaVirtual.StatCard.Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/report_total_orders" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+        <TextView
+            style="@style/Widget.TiendaVirtual.SectionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/report_chart_revenue" />
+
+        <TextView
+            android:id="@+id/categoryRevenueLabel"
+            style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/categoryRevenueBar"
+            style="@style/Widget.TiendaVirtual.ProgressBar.Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            android:max="100" />
+
+        <TextView
+            style="@style/Widget.TiendaVirtual.SectionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/report_section_top_products" />
+
+        <TextView
+            android:id="@+id/topProducts"
+            style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

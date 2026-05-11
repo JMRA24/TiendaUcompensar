@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.TiendaVirtual.Card.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_card">
+
+        <TextView
+            android:id="@+id/orderId"
+            style="@style/TextAppearance.TiendaVirtual.TitleMedium"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/orderStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            style="@style/TextAppearance.TiendaVirtual.LabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/orderDate"
+            style="@style/TextAppearance.TiendaVirtual.BodySmall"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderId" />
+
+        <TextView
+            android:id="@+id/orderItemsCount"
+            style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            app:layout_constraintEnd_toStartOf="@id/orderTotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderDate" />
+
+        <TextView
+            android:id="@+id/orderTotal"
+            style="@style/TextAppearance.TiendaVirtual.Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/orderItemsCount"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

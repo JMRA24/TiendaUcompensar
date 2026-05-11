@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_seller"
+    app:startDestination="@id/nav_seller_dashboard">
+
+    <fragment
+        android:id="@+id/nav_seller_dashboard"
+        android:name="com.project.store.seller.SellerDashboardFragment"
+        android:label="@string/seller_dashboard_title" />
+
+    <fragment
+        android:id="@+id/nav_seller_products"
+        android:name="com.project.store.seller.ProductListFragment"
+        android:label="@string/seller_products_title">
+        <action
+            android:id="@+id/action_seller_products_to_create_product"
+            app:destination="@id/nav_create_product" />
+        <action
+            android:id="@+id/action_seller_products_to_edit_product"
+            app:destination="@id/nav_edit_product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_create_product"
+        android:name="com.project.store.seller.CreateProductFragment"
+        android:label="@string/create_product_title" />
+
+    <fragment
+        android:id="@+id/nav_edit_product"
+        android:name="com.project.store.seller.EditProductFragment"
+        android:label="@string/edit_product_title">
+        <argument
+            android:name="productId"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_seller_orders"
+        android:name="com.project.store.seller.SellerOrdersFragment"
+        android:label="@string/seller_orders_title" />
+
+    <fragment
+        android:id="@+id/nav_seller_profile"
+        android:name="com.project.store.seller.SellerProfileFragment"
+        android:label="@string/seller_profile_title" />
+
+</navigation>

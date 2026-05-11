@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen">
+
+        <TextView
+            android:id="@+id/homeGreeting"
+            style="@style/TextAppearance.TiendaVirtual.HeadlineLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/homeSearchLayout"
+            style="@style/Widget.TiendaVirtual.TextInputLayout.Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:hint="@string/home_search_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/homeSearchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ViewFlipper
+            android:id="@+id/bannerFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:autoStart="true"
+            android:flipInterval="3500">
+
+            <include layout="@layout/view_banner_one" />
+
+            <include layout="@layout/view_banner_two" />
+
+            <include layout="@layout/view_banner_three" />
+
+        </ViewFlipper>
+
+        <TextView
+            style="@style/Widget.TiendaVirtual.SectionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/home_section_categories" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            style="@style/Widget.TiendaVirtual.SectionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/home_section_featured" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/featuredProductsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

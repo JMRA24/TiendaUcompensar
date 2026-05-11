@@ -1,0 +1,17 @@
+[
+  {
+    "name": "nav_admin",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_buyer",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_seller",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  }
+]

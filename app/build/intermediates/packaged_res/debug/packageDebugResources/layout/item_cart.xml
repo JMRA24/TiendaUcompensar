@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.TiendaVirtual.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_card">
+
+        <ImageView
+            android:id="@+id/cartProductImage"
+            android:layout_width="@dimen/product_image_thumbnail"
+            android:layout_height="@dimen/product_image_thumbnail"
+            android:contentDescription="@string/cd_product_image_generic"
+            android:padding="@dimen/spacing_sm"
+            android:src="@drawable/ic_placeholder_product"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cartProductName"
+            style="@style/TextAppearance.TiendaVirtual.TitleMedium"
+            android:layout_width="@dimen/spacing_none"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_md"
+            app:layout_constraintEnd_toStartOf="@id/cartProductSubtotal"
+            app:layout_constraintStart_toEndOf="@id/cartProductImage"
+            app:layout_constraintTop_toTopOf="@id/cartProductImage" />
+
+        <TextView
+            android:id="@+id/cartProductQuantity"
+            style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sm"
+            app:layout_constraintStart_toStartOf="@id/cartProductName"
+            app:layout_constraintTop_toBottomOf="@id/cartProductName" />
+
+        <TextView
+            android:id="@+id/cartProductUnitPrice"
+            style="@style/TextAppearance.TiendaVirtual.BodySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_sm"
+            app:layout_constraintBaseline_toBaselineOf="@id/cartProductQuantity"
+            app:layout_constraintStart_toEndOf="@id/cartProductQuantity" />
+
+        <TextView
+            android:id="@+id/cartProductSubtotal"
+            style="@style/TextAppearance.TiendaVirtual.Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cartProductName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

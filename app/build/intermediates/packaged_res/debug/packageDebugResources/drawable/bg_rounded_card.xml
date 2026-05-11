@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Fondo de card con sombra suave mediante layer-list.
+    La sombra se desplaza al sureste usando insets positivos en cada capa:
+      - Capa sombra:     inset desde top/left → aparece abajo y a la derecha
+      - Capa superficie: inset desde right/bottom → deja visible la sombra
+
+    Para sombra real basada en elevación, usar MaterialCardView + cardElevation.
+    Uso: android:background="@drawable/bg_rounded_card"
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Penumbra exterior (más suave, mayor desplazamiento) -->
+    <item
+        android:top="@dimen/spacing_sm"
+        android:left="@dimen/spacing_xxs">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_card" />
+            <solid android:color="@color/color_shadow_soft" />
+        </shape>
+    </item>
+
+    <!-- Sombra intermedia -->
+    <item
+        android:top="@dimen/spacing_xs"
+        android:left="@dimen/spacing_xxs">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_card" />
+            <solid android:color="@color/color_shadow_medium" />
+        </shape>
+    </item>
+
+    <!-- Sombra próxima (más definida, desplazamiento mínimo) -->
+    <item android:top="@dimen/spacing_xxs">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_card" />
+            <solid android:color="@color/color_shadow_strong" />
+        </shape>
+    </item>
+
+    <!-- Superficie principal: inset right/bottom revela la sombra -->
+    <item
+        android:right="@dimen/spacing_xs"
+        android:bottom="@dimen/spacing_sm">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_card" />
+            <solid android:color="@color/color_surface" />
+            <stroke
+                android:width="@dimen/stroke_width"
+                android:color="@color/color_outline_variant" />
+        </shape>
+    </item>
+
+</layer-list>

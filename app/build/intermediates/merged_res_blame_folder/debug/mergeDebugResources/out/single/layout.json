@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_create_product.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_create_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\view_banner_one.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\view_banner_one.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_product.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_checkout.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_checkout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_edit_product.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_edit_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_cart.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_seller.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_seller.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_order_history.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_order_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\view_banner_three.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\view_banner_three.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_user.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_sales_report.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_sales_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_catalog.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_catalog.xml"
+    },
+    {
+        "merged": "com.project.store.app-mergeDebugResources-48:/layout/fragment_seller_dashboard.xml",
+        "source": "com.project.store.app-main-51:/layout/fragment_seller_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_user_list.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_user_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_placeholder.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_category.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_cart.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_create_user.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_create_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_product_detail.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_product_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\view_banner_two.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\view_banner_two.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\item_seller_order.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\item_seller_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_product_list.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_product_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_buyer.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_buyer.xml"
+    },
+    {
+        "merged": "com.project.store.app-mergeDebugResources-48:/layout/fragment_admin_dashboard.xml",
+        "source": "com.project.store.app-main-51:/layout/fragment_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_edit_user.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_edit_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_admin_products.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_admin_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_seller_dashboard.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_seller_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_seller_orders.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_seller_orders.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_admin_dashboard.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\fragment_seller_profile.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\fragment_seller_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-mergeDebugResources-48:\\layout\\activity_admin.xml",
+        "source": "C:\\Users\\Julian\\.gradle\\daemon\\8.4\\com.project.store.app-main-51:\\layout\\activity_admin.xml"
+    }
+]

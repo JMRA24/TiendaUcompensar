@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_admin"
+    app:startDestination="@id/nav_admin_dashboard">
+
+    <fragment
+        android:id="@+id/nav_admin_dashboard"
+        android:name="com.project.store.admin.AdminDashboardFragment"
+        android:label="@string/admin_dashboard_title" />
+
+    <fragment
+        android:id="@+id/nav_admin_users"
+        android:name="com.project.store.admin.UserListFragment"
+        android:label="@string/admin_users_title">
+        <action
+            android:id="@+id/action_admin_users_to_create_user"
+            app:destination="@id/nav_create_user" />
+        <action
+            android:id="@+id/action_admin_users_to_edit_user"
+            app:destination="@id/nav_edit_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_create_user"
+        android:name="com.project.store.admin.CreateUserFragment"
+        android:label="@string/create_user_title" />
+
+    <fragment
+        android:id="@+id/nav_edit_user"
+        android:name="com.project.store.admin.EditUserFragment"
+        android:label="@string/edit_user_title">
+        <argument
+            android:name="userId"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin_products"
+        android:name="com.project.store.admin.AdminProductsFragment"
+        android:label="@string/admin_products_title" />
+
+    <fragment
+        android:id="@+id/nav_admin_reports"
+        android:name="com.project.store.admin.SalesReportFragment"
+        android:label="@string/sales_report_title" />
+
+</navigation>

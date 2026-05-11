@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/catalogSearchLayout"
+        style="@style/Widget.TiendaVirtual.TextInputLayout.Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/catalog_search_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/catalogSearchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_md"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filterChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/catalogResultsCount"
+        style="@style/TextAppearance.TiendaVirtual.BodyMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_md" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catalogRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_none"
+        android:layout_marginTop="@dimen/margin_sm"
+        android:layout_weight="1" />
+
+</LinearLayout>

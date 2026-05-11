@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        TEMA BASE — hereda de Material3 Light sin ActionBar.
+        Todos los atributos de color apuntan a @color/* (nunca hardcodeados).
+        Para modo oscuro crear res/values-night/themes.xml que extienda
+        Theme.Material3.Dark.NoActionBar y use los colores *_night de colors.xml.
+    -->
+    <style name="Base.Theme.TiendaVirtual" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- === Colores primarios === -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorPrimaryContainer">@color/color_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/color_on_primary_container</item>
+
+        <!-- === Colores secundarios === -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/color_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/color_on_secondary_container</item>
+
+        <!-- === Colores terciarios === -->
+        <item name="colorTertiary">@color/color_tertiary</item>
+        <item name="colorOnTertiary">@color/color_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/color_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/color_on_tertiary_container</item>
+
+        <!-- === Colores de error === -->
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <item name="colorErrorContainer">@color/color_error_container</item>
+        <item name="colorOnErrorContainer">@color/color_on_error_container</item>
+
+        <!-- === Fondo === -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        <!-- === Superficie === -->
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorSurfaceVariant">@color/color_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_variant</item>
+
+        <!-- === Outline === -->
+        <item name="colorOutline">@color/color_outline</item>
+        <item name="colorOutlineVariant">@color/color_outline_variant</item>
+
+        <!-- === Colores inversos (para Snackbar y tooltips) === -->
+
+        <!-- === Ventana === -->
+        <item name="android:windowBackground">@color/color_background</item>
+
+        <!-- === Status bar: transparente para edge-to-edge === -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- === Navigation bar (API 27+, ignorado en API 26) === -->
+        <item name="android:navigationBarColor">@color/color_surface</item>
+
+        <!-- === Formas de componentes Material 3 === -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.TiendaVirtual.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.TiendaVirtual.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.TiendaVirtual.LargeComponent</item>
+
+    </style>
+
+    <!-- ================================================================== -->
+    <!-- TEMA PRINCIPAL — Modo claro                                         -->
+    <!-- ================================================================== -->
+    <style name="Theme.TiendaVirtual" parent="Base.Theme.TiendaVirtual" />
+
+    <!-- ================================================================== -->
+    <!-- TEMA SPLASH — Pantalla de inicio                                    -->
+    <!-- ================================================================== -->
+    <style name="Theme.TiendaVirtual.Splash" parent="Base.Theme.TiendaVirtual">
+        <item name="android:windowBackground">@color/color_primary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- ================================================================== -->
+    <!-- TEMA SIN BARRA DE NAVEGACIÓN — para diálogos fullscreen             -->
+    <!-- ================================================================== -->
+    <style name="Theme.TiendaVirtual.FullScreen" parent="Base.Theme.TiendaVirtual">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <!-- ================================================================== -->
+    <!-- OVERLAY — App Bar (ThemeOverlay aplicado a Toolbar)                 -->
+    <!-- ================================================================== -->
+    <style name="ThemeOverlay.TiendaVirtual.AppBar.Light" parent="ThemeOverlay.Material3.Light">
+        <item name="colorSurface">@color/color_top_app_bar_background</item>
+        <item name="colorOnSurface">@color/color_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/color_text_secondary</item>
+    </style>
+
+    <style name="ThemeOverlay.TiendaVirtual.AppBar.Primary" parent="ThemeOverlay.Material3.Dark">
+        <item name="colorSurface">@color/color_primary</item>
+        <item name="colorOnSurface">@color/color_on_primary</item>
+        <item name="colorOnSurfaceVariant">@color/color_primary_light</item>
+    </style>
+
+    <!-- ================================================================== -->
+    <!-- OVERLAY — Dialog                                                    -->
+    <!-- ================================================================== -->
+    <style name="ThemeOverlay.TiendaVirtual.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.TiendaVirtual.LargeComponent</item>
+    </style>
+
+    <!--
+        NOTA — TEMA OSCURO:
+        Crear res/values-night/themes.xml con:
+
+        <style name="Theme.TiendaVirtual" parent="Theme.Material3.Dark.NoActionBar">
+            <item name="colorPrimary">@color/color_primary_night</item>
+            <item name="colorOnPrimary">@color/color_on_primary_night</item>
+            <item name="colorPrimaryContainer">@color/color_primary_container_night</item>
+            <item name="colorOnPrimaryContainer">@color/color_on_primary_container_night</item>
+            <item name="colorSecondary">@color/color_secondary_night</item>
+            <item name="colorOnSecondary">@color/color_on_secondary_night</item>
+            <item name="android:colorBackground">@color/color_background_night</item>
+            <item name="colorOnBackground">@color/color_on_background_night</item>
+            <item name="colorSurface">@color/color_surface_night</item>
+            <item name="colorOnSurface">@color/color_on_surface_night</item>
+            <item name="colorSurfaceVariant">@color/color_surface_variant_night</item>
+            <item name="colorOnSurfaceVariant">@color/color_on_surface_variant_night</item>
+            <item name="colorOutline">@color/color_outline_night</item>
+            <item name="colorOutlineVariant">@color/color_outline_variant_night</item>
+            <item name="colorError">@color/color_error_night</item>
+            <item name="colorOnError">@color/color_on_error_night</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+            <item name="android:windowLightStatusBar">false</item>
+            <item name="android:navigationBarColor">@color/color_surface_night</item>
+        </style>
+    -->
+
+</resources>

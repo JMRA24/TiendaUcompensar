@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================================================== -->
+    <!-- PALETA PRIMARIA — Azul Ecommerce                                    -->
+    <!-- ================================================================== -->
+    <color name="color_primary">#1A56DB</color>
+    <color name="color_primary_dark">#1348B8</color>
+    <color name="color_primary_light">#4E80EE</color>
+    <color name="color_primary_container">#DBEAFE</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_primary_container">#1E3A8A</color>
+
+    <!-- ================================================================== -->
+    <!-- PALETA SECUNDARIA — Naranja Acento                                  -->
+    <!-- ================================================================== -->
+    <color name="color_secondary">#F97316</color>
+    <color name="color_secondary_dark">#EA6C0A</color>
+    <color name="color_secondary_light">#FB923C</color>
+    <color name="color_secondary_container">#FFEDD5</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_on_secondary_container">#7C2D12</color>
+
+    <!-- ================================================================== -->
+    <!-- PALETA TERCIARIA — Verde Éxito                                      -->
+    <!-- ================================================================== -->
+    <color name="color_tertiary">#10B981</color>
+    <color name="color_tertiary_dark">#059669</color>
+    <color name="color_tertiary_container">#D1FAE5</color>
+    <color name="color_on_tertiary">#FFFFFF</color>
+    <color name="color_on_tertiary_container">#064E3B</color>
+
+    <!-- ================================================================== -->
+    <!-- FONDO Y SUPERFICIE                                                  -->
+    <!-- ================================================================== -->
+    <color name="color_background">#F8FAFC</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_surface_variant">#F1F5F9</color>
+    <color name="color_surface_tint">#EFF6FF</color>
+    <color name="color_on_background">#0F172A</color>
+    <color name="color_on_surface">#1E293B</color>
+    <color name="color_on_surface_variant">#64748B</color>
+
+    <!-- ================================================================== -->
+    <!-- OUTLINE Y BORDES                                                    -->
+    <!-- ================================================================== -->
+    <color name="color_outline">#CBD5E1</color>
+    <color name="color_outline_variant">#E2E8F0</color>
+
+    <!-- ================================================================== -->
+    <!-- ESTADOS — Error                                                     -->
+    <!-- ================================================================== -->
+    <color name="color_error">#EF4444</color>
+    <color name="color_error_container">#FEE2E2</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_on_error_container">#7F1D1D</color>
+
+    <!-- ================================================================== -->
+    <!-- ESTADOS — Éxito                                                     -->
+    <!-- ================================================================== -->
+    <color name="color_success">#22C55E</color>
+    <color name="color_success_container">#DCFCE7</color>
+    <color name="color_on_success">#FFFFFF</color>
+    <color name="color_on_success_container">#14532D</color>
+
+    <!-- ================================================================== -->
+    <!-- ESTADOS — Advertencia                                               -->
+    <!-- ================================================================== -->
+    <color name="color_warning">#F59E0B</color>
+    <color name="color_warning_container">#FEF3C7</color>
+    <color name="color_on_warning">#FFFFFF</color>
+    <color name="color_on_warning_container">#78350F</color>
+
+    <!-- ================================================================== -->
+    <!-- ESTADOS — Información                                               -->
+    <!-- ================================================================== -->
+    <color name="color_info">#3B82F6</color>
+    <color name="color_info_container">#DBEAFE</color>
+    <color name="color_on_info">#FFFFFF</color>
+    <color name="color_on_info_container">#1E3A8A</color>
+
+    <!-- ================================================================== -->
+    <!-- TEXTO                                                               -->
+    <!-- ================================================================== -->
+    <color name="color_text_primary">#0F172A</color>
+    <color name="color_text_secondary">#475569</color>
+    <color name="color_text_tertiary">#94A3B8</color>
+    <color name="color_text_disabled">#CBD5E1</color>
+    <color name="color_text_on_primary">#FFFFFF</color>
+    <color name="color_text_link">#1A56DB</color>
+
+    <!-- ================================================================== -->
+    <!-- MARCAS EXTERNAS                                                     -->
+    <!-- ================================================================== -->
+    <color name="color_google_blue">#4285F4</color>
+    <color name="color_google_green">#34A853</color>
+    <color name="color_google_yellow">#FBBC05</color>
+    <color name="color_google_red">#EA4335</color>
+
+    <!-- ================================================================== -->
+    <!-- PRECIOS Y COMERCIO                                                  -->
+    <!-- ================================================================== -->
+    <color name="color_price">#DC2626</color>
+    <color name="color_price_original">#94A3B8</color>
+    <color name="color_discount_badge">#EF4444</color>
+    <color name="color_discount_badge_text">#FFFFFF</color>
+    <color name="color_in_stock">#22C55E</color>
+    <color name="color_out_of_stock">#EF4444</color>
+    <color name="color_low_stock">#F59E0B</color>
+
+    <!-- ================================================================== -->
+    <!-- NAVEGACIÓN                                                          -->
+    <!-- ================================================================== -->
+    <color name="color_bottom_nav_selected">#1A56DB</color>
+    <color name="color_bottom_nav_unselected">#94A3B8</color>
+    <color name="color_bottom_nav_background">#FFFFFF</color>
+    <color name="color_top_app_bar_background">#FFFFFF</color>
+
+    <!-- ================================================================== -->
+    <!-- ROLES DE USUARIO — Badges                                           -->
+    <!-- ================================================================== -->
+    <color name="color_role_admin">#7C3AED</color>
+    <color name="color_role_admin_container">#EDE9FE</color>
+    <color name="color_role_seller">#1A56DB</color>
+    <color name="color_role_seller_container">#DBEAFE</color>
+    <color name="color_role_buyer">#10B981</color>
+    <color name="color_role_buyer_container">#D1FAE5</color>
+
+    <!-- ================================================================== -->
+    <!-- ESTADO DE ÓRDENES                                                   -->
+    <!-- ================================================================== -->
+    <color name="color_order_pending">#F59E0B</color>
+    <color name="color_order_pending_container">#FEF3C7</color>
+    <color name="color_order_processing">#3B82F6</color>
+    <color name="color_order_processing_container">#DBEAFE</color>
+    <color name="color_order_shipped">#8B5CF6</color>
+    <color name="color_order_shipped_container">#EDE9FE</color>
+    <color name="color_order_delivered">#22C55E</color>
+    <color name="color_order_delivered_container">#DCFCE7</color>
+    <color name="color_order_cancelled">#EF4444</color>
+    <color name="color_order_cancelled_container">#FEE2E2</color>
+
+    <!-- ================================================================== -->
+    <!-- GRÁFICOS Y DASHBOARD                                                -->
+    <!-- ================================================================== -->
+    <color name="color_chart_1">#1A56DB</color>
+    <color name="color_chart_2">#F97316</color>
+    <color name="color_chart_3">#10B981</color>
+    <color name="color_chart_4">#8B5CF6</color>
+    <color name="color_chart_5">#F59E0B</color>
+    <color name="color_chart_grid">#E2E8F0</color>
+    <color name="color_chart_label">#64748B</color>
+
+    <!-- ================================================================== -->
+    <!-- OVERLAYS Y TRANSPARENCIAS                                           -->
+    <!-- ================================================================== -->
+    <color name="color_overlay_light">#1A000000</color>
+    <color name="color_overlay_medium">#4D000000</color>
+    <color name="color_overlay_dark">#80000000</color>
+    <color name="color_scrim">#99000000</color>
+    <color name="color_ripple_primary">#1A1A56DB</color>
+    <color name="color_ripple_on_dark">#1AFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- ================================================================== -->
+    <!-- SOMBRAS — Para drawables XML (fake shadow en layer-list)            -->
+    <!-- ================================================================== -->
+    <color name="color_shadow_soft">#0A000000</color>
+    <color name="color_shadow_medium">#14000000</color>
+    <color name="color_shadow_strong">#1F000000</color>
+
+    <!-- ================================================================== -->
+    <!-- TEMA OSCURO (usar en res/values-night/themes.xml)                  -->
+    <!-- ================================================================== -->
+    <color name="color_primary_night">#60A5FA</color>
+    <color name="color_on_primary_night">#1E3A8A</color>
+    <color name="color_primary_container_night">#1E3A8A</color>
+    <color name="color_on_primary_container_night">#BFDBFE</color>
+    <color name="color_secondary_night">#FDBA74</color>
+    <color name="color_on_secondary_night">#7C2D12</color>
+    <color name="color_background_night">#0F172A</color>
+    <color name="color_surface_night">#1E293B</color>
+    <color name="color_surface_variant_night">#334155</color>
+    <color name="color_on_background_night">#F8FAFC</color>
+    <color name="color_on_surface_night">#E2E8F0</color>
+    <color name="color_on_surface_variant_night">#94A3B8</color>
+    <color name="color_outline_night">#475569</color>
+    <color name="color_outline_variant_night">#334155</color>
+    <color name="color_error_night">#F87171</color>
+    <color name="color_on_error_night">#7F1D1D</color>
+
+</resources>

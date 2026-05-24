@@ -5,10 +5,7 @@ import com.project.store.models.Product
 
 object CartManager {
 
-    private val cartItems = mutableListOf(
-        OrderItem(productId = 1, quantity = 1, unitPrice = 159900.0),
-        OrderItem(productId = 6, quantity = 2, unitPrice = 89900.0)
-    )
+    private val cartItems = mutableListOf<OrderItem>()
 
     fun getItems(): List<OrderItem> = cartItems.toList()
 
@@ -21,6 +18,8 @@ object CartManager {
             cartItems.add(
                 OrderItem(
                     productId = product.id,
+                    productName = product.name,
+                    productImage = product.imageName,
                     quantity = 1,
                     unitPrice = product.price
                 )
@@ -33,6 +32,14 @@ object CartManager {
     fun getShipping(): Double = if (cartItems.isEmpty()) 0.0 else SHIPPING_COST
 
     fun getTotal(): Double = getSubtotal() + getShipping()
+
+    fun clear() {
+        cartItems.clear()
+    }
+
+    fun removeItem(productId: Int) {
+        cartItems.removeAll { it.productId == productId }
+    }
 
     private const val SHIPPING_COST = 9900.0
 }

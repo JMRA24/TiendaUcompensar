@@ -65,6 +65,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_sm" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editSellerProfileButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:text="@string/btn_edit_profile" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sellerLogoutButton"
+            style="@style/Widget.TiendaVirtual.Button.Danger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_md"
+            android:text="@string/btn_logout" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

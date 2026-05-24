@@ -6,23 +6,29 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.chip.Chip
 import com.project.store.R
 import com.project.store.adapters.ProductAdapter
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentCatalogBinding
 import com.project.store.models.Product
-import com.project.store.utils.MockRepository
+import kotlinx.coroutines.launch
 
 class CatalogFragment : Fragment() {
 
     private var _binding: FragmentCatalogBinding? = null
     private val binding get() = _binding!!
+    private val repository = FirebaseRepository.getInstance()
     private lateinit var productAdapter: ProductAdapter
     private var selectedCategoryId: Int? = null
     private var query: String = ""
+    private var products: List<Product> = emptyList()
+    private var categoryNamesById: Map<Int, String> = emptyMap()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,10 +41,9 @@ class CatalogFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupFilters()
         setupRecyclerView()
         setupSearch()
-        applyFilters()
+        loadProducts()
     }
 
     override fun onDestroyView() {
@@ -53,12 +58,41 @@ class CatalogFragment : Fragment() {
     }
 
     private fun setupFilters() {
+        binding.filterChipGroup.removeAllViews()
         val allChip = createFilterChip(getString(R.string.filter_all_categories), null)
         allChip.isChecked = true
         binding.filterChipGroup.addView(allChip)
 
-        MockRepository.categories.forEach { category ->
-            binding.filterChipGroup.addView(createFilterChip(category.name, category.id))
+        categoryNamesById.map { it.key to it.value }
+            .distinctBy { it.first }
+            .forEach { (categoryId, categoryName) ->
+                binding.filterChipGroup.addView(createFilterChip(categoryName, categoryId))
+            }
+    }
+
+    private fun loadProducts() {
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.getProducts()
+                .onSuccess { firebaseProducts ->
+                    categoryNamesById = firebaseProducts
+                        .map { it.category.hashCode() to it.category }
+                        .distinctBy { it.first }
+                        .toMap()
+                    products = firebaseProducts.map { firebaseProduct ->
+                        firebaseProduct.toUiProduct()
+                    }
+                    setupFilters()
+                    applyFilters()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            setLoading(false)
         }
     }
 
@@ -87,7 +121,7 @@ class CatalogFragment : Fragment() {
     }
 
     private fun applyFilters() {
-        val filteredProducts = MockRepository.products.filter { product ->
+        val filteredProducts = products.filter { product ->
             val matchesCategory = selectedCategoryId == null || product.categoryId == selectedCategoryId
             val matchesQuery = query.isBlank() ||
                 product.name.contains(query, ignoreCase = true) ||
@@ -100,6 +134,25 @@ class CatalogFragment : Fragment() {
             R.plurals.catalog_results_quantity,
             filteredProducts.size,
             filteredProducts.size
+        )
+    }
+
+    private fun setLoading(isLoading: Boolean) {
+        binding.catalogSearchInput.isEnabled = !isLoading
+        binding.filterChipGroup.isEnabled = !isLoading
+    }
+
+    private fun com.project.store.data.model.Product.toUiProduct(): Product {
+        return Product(
+            id = id.hashCode(),
+            name = name,
+            description = description,
+            price = price,
+            stock = stock,
+            categoryId = category.hashCode(),
+            sellerId = sellerId.hashCode(),
+            imageName = imageUrl,
+            isAvailable = stock > 0
         )
     }
 

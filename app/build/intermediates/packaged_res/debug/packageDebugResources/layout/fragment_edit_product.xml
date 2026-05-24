@@ -20,15 +20,39 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_screen">
 
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="@dimen/spacing_none"
+                android:layout_height="180dp"
+                android:background="@color/color_surface_variant"
+                android:contentDescription="@string/cd_product_image_generic"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chooseImageButton"
+                style="@style/Widget.TiendaVirtual.Button.Outlined"
+                android:layout_width="@dimen/spacing_none"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_md"
+                android:text="@string/btn_choose_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productImage" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/productNameLayout"
                 style="@style/Widget.TiendaVirtual.TextInputLayout"
                 android:layout_width="@dimen/spacing_none"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_md"
                 android:hint="@string/label_product_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/chooseImageButton">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/productNameInput"

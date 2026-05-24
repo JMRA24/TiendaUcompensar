@@ -4,23 +4,28 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.chip.Chip
 import com.project.store.R
 import com.project.store.adapters.UserAdapter
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentUserListBinding
 import com.project.store.models.User
 import com.project.store.models.UserRole
-import com.project.store.utils.MockRepository
+import kotlinx.coroutines.launch
 
 class UserListFragment : Fragment() {
 
     private var _binding: FragmentUserListBinding? = null
     private val binding get() = _binding!!
+    private val repository = FirebaseRepository.getInstance()
     private lateinit var userAdapter: UserAdapter
     private var selectedRole: UserRole? = null
+    private var users: List<User> = emptyList()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,7 +43,7 @@ class UserListFragment : Fragment() {
         binding.addUserFab.setOnClickListener {
             findNavController().navigate(R.id.nav_create_user)
         }
-        applyFilter()
+        loadUsers()
     }
 
     override fun onDestroyView() {
@@ -73,9 +78,55 @@ class UserListFragment : Fragment() {
     }
 
     private fun applyFilter() {
-        val users = selectedRole?.let { MockRepository.getUsersByRole(it) } ?: MockRepository.users
-        userAdapter.submitList(users)
-        binding.usersCount.text = getString(R.string.admin_users_count, users.size)
+        val filteredUsers = selectedRole?.let { role ->
+            users.filter { it.role == role }
+        } ?: users
+        userAdapter.submitList(filteredUsers)
+        binding.usersCount.text = getString(R.string.admin_users_count, filteredUsers.size)
+    }
+
+    private fun loadUsers() {
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.getAllUsers()
+                .onSuccess { firebaseUsers ->
+                    users = firebaseUsers.map { it.toUiUser() }
+                    applyFilter()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            setLoading(false)
+        }
+    }
+
+    private fun setLoading(isLoading: Boolean) {
+        binding.addUserFab.isEnabled = !isLoading
+        binding.roleChipGroup.isEnabled = !isLoading
+    }
+
+    private fun com.project.store.data.model.User.toUiUser(): User {
+        return User(
+            id = id.hashCode(),
+            fullName = name,
+            email = email,
+            password = "",
+            role = role.toUiRole(),
+            phone = phone,
+            isActive = true
+        )
+    }
+
+    private fun String.toUiRole(): UserRole {
+        return when (lowercase()) {
+            "admin" -> UserRole.ADMIN
+            "seller" -> UserRole.SELLER
+            else -> UserRole.BUYER
+        }
     }
 
     private fun openEditUser(user: User) {

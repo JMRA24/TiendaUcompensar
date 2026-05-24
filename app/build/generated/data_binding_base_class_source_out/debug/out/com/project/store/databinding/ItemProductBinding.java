@@ -4,6 +4,7 @@ package com.project.store.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,6 +22,9 @@ public final class ItemProductBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final ImageButton deleteButton;
+
+  @NonNull
   public final TextView productDescription;
 
   @NonNull
@@ -35,11 +39,12 @@ public final class ItemProductBinding implements ViewBinding {
   @NonNull
   public final TextView productStock;
 
-  private ItemProductBinding(@NonNull MaterialCardView rootView,
+  private ItemProductBinding(@NonNull MaterialCardView rootView, @NonNull ImageButton deleteButton,
       @NonNull TextView productDescription, @NonNull ImageView productImage,
       @NonNull TextView productName, @NonNull TextView productPrice,
       @NonNull TextView productStock) {
     this.rootView = rootView;
+    this.deleteButton = deleteButton;
     this.productDescription = productDescription;
     this.productImage = productImage;
     this.productName = productName;
@@ -74,6 +79,12 @@ public final class ItemProductBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.deleteButton;
+      ImageButton deleteButton = ViewBindings.findChildViewById(rootView, id);
+      if (deleteButton == null) {
+        break missingId;
+      }
+
       id = R.id.productDescription;
       TextView productDescription = ViewBindings.findChildViewById(rootView, id);
       if (productDescription == null) {
@@ -104,8 +115,8 @@ public final class ItemProductBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemProductBinding((MaterialCardView) rootView, productDescription, productImage,
-          productName, productPrice, productStock);
+      return new ItemProductBinding((MaterialCardView) rootView, deleteButton, productDescription,
+          productImage, productName, productPrice, productStock);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

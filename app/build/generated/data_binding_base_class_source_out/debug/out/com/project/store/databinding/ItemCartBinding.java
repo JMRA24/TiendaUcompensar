@@ -4,6 +4,7 @@ package com.project.store.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -35,15 +36,20 @@ public final class ItemCartBinding implements ViewBinding {
   @NonNull
   public final TextView cartProductUnitPrice;
 
+  @NonNull
+  public final ImageButton deleteCartItemButton;
+
   private ItemCartBinding(@NonNull MaterialCardView rootView, @NonNull ImageView cartProductImage,
       @NonNull TextView cartProductName, @NonNull TextView cartProductQuantity,
-      @NonNull TextView cartProductSubtotal, @NonNull TextView cartProductUnitPrice) {
+      @NonNull TextView cartProductSubtotal, @NonNull TextView cartProductUnitPrice,
+      @NonNull ImageButton deleteCartItemButton) {
     this.rootView = rootView;
     this.cartProductImage = cartProductImage;
     this.cartProductName = cartProductName;
     this.cartProductQuantity = cartProductQuantity;
     this.cartProductSubtotal = cartProductSubtotal;
     this.cartProductUnitPrice = cartProductUnitPrice;
+    this.deleteCartItemButton = deleteCartItemButton;
   }
 
   @Override
@@ -103,8 +109,14 @@ public final class ItemCartBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.deleteCartItemButton;
+      ImageButton deleteCartItemButton = ViewBindings.findChildViewById(rootView, id);
+      if (deleteCartItemButton == null) {
+        break missingId;
+      }
+
       return new ItemCartBinding((MaterialCardView) rootView, cartProductImage, cartProductName,
-          cartProductQuantity, cartProductSubtotal, cartProductUnitPrice);
+          cartProductQuantity, cartProductSubtotal, cartProductUnitPrice, deleteCartItemButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

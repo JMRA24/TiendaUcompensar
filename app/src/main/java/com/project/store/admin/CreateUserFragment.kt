@@ -7,15 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.project.store.R
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentCreateUserBinding
 import com.project.store.models.UserRole
+import kotlinx.coroutines.launch
 
 class CreateUserFragment : Fragment() {
 
     private var _binding: FragmentCreateUserBinding? = null
     private val binding get() = _binding!!
+    private val repository = FirebaseRepository.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,8 +35,7 @@ class CreateUserFragment : Fragment() {
         binding.deleteUserButton.visibility = View.GONE
         binding.saveUserButton.setOnClickListener {
             if (validateForm()) {
-                Toast.makeText(requireContext(), R.string.user_created_success, Toast.LENGTH_SHORT).show()
-                findNavController().navigateUp()
+                createUser()
             }
         }
     }
@@ -96,6 +99,43 @@ class CreateUserFragment : Fragment() {
         R.id.roleSeller -> UserRole.SELLER
         R.id.roleBuyer -> UserRole.BUYER
         else -> null
+    }
+
+    private fun createUser() {
+        val name = binding.userNameInput.text?.toString()?.trim().orEmpty()
+        val email = binding.userEmailInput.text?.toString()?.trim().orEmpty()
+        val phone = binding.userPhoneInput.text?.toString()?.trim().orEmpty()
+        val password = binding.userPasswordInput.text?.toString().orEmpty()
+        val role = selectedRole()?.toFirebaseRole() ?: return
+
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.registerUser(email, password, name, role)
+                .onSuccess { user ->
+                    repository.updateUserProfile(user.copy(phone = phone))
+                    Toast.makeText(requireContext(), R.string.user_created_success, Toast.LENGTH_SHORT).show()
+                    findNavController().popBackStack()
+                }
+                .onFailure {
+                    Toast.makeText(requireContext(), R.string.error_auth, Toast.LENGTH_SHORT).show()
+                }
+            setLoading(false)
+        }
+    }
+
+    private fun setLoading(isLoading: Boolean) {
+        binding.saveUserButton.isEnabled = !isLoading
+        binding.userNameInput.isEnabled = !isLoading
+        binding.userEmailInput.isEnabled = !isLoading
+        binding.userPhoneInput.isEnabled = !isLoading
+        binding.userPasswordInput.isEnabled = !isLoading
+        binding.userRoleGroup.isEnabled = !isLoading
+    }
+
+    private fun UserRole.toFirebaseRole(): String = when (this) {
+        UserRole.ADMIN -> "admin"
+        UserRole.SELLER -> "seller"
+        UserRole.BUYER -> "buyer"
     }
 
     private fun clearErrors() {

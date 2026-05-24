@@ -4,6 +4,7 @@ package com.project.store.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,6 +24,9 @@ public final class FragmentEditProductBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final MaterialButton chooseImageButton;
+
+  @NonNull
   public final NestedScrollView editProductScroll;
 
   @NonNull
@@ -36,6 +40,9 @@ public final class FragmentEditProductBinding implements ViewBinding {
 
   @NonNull
   public final TextInputLayout productDescriptionLayout;
+
+  @NonNull
+  public final ImageView productImage;
 
   @NonNull
   public final TextInputEditText productNameInput;
@@ -59,20 +66,23 @@ public final class FragmentEditProductBinding implements ViewBinding {
   public final MaterialButton saveProductButton;
 
   private FragmentEditProductBinding(@NonNull ConstraintLayout rootView,
-      @NonNull NestedScrollView editProductScroll, @NonNull TextInputEditText productCategoryInput,
+      @NonNull MaterialButton chooseImageButton, @NonNull NestedScrollView editProductScroll,
+      @NonNull TextInputEditText productCategoryInput,
       @NonNull TextInputLayout productCategoryLayout,
       @NonNull TextInputEditText productDescriptionInput,
-      @NonNull TextInputLayout productDescriptionLayout,
+      @NonNull TextInputLayout productDescriptionLayout, @NonNull ImageView productImage,
       @NonNull TextInputEditText productNameInput, @NonNull TextInputLayout productNameLayout,
       @NonNull TextInputEditText productPriceInput, @NonNull TextInputLayout productPriceLayout,
       @NonNull TextInputEditText productStockInput, @NonNull TextInputLayout productStockLayout,
       @NonNull MaterialButton saveProductButton) {
     this.rootView = rootView;
+    this.chooseImageButton = chooseImageButton;
     this.editProductScroll = editProductScroll;
     this.productCategoryInput = productCategoryInput;
     this.productCategoryLayout = productCategoryLayout;
     this.productDescriptionInput = productDescriptionInput;
     this.productDescriptionLayout = productDescriptionLayout;
+    this.productImage = productImage;
     this.productNameInput = productNameInput;
     this.productNameLayout = productNameLayout;
     this.productPriceInput = productPriceInput;
@@ -109,6 +119,12 @@ public final class FragmentEditProductBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.chooseImageButton;
+      MaterialButton chooseImageButton = ViewBindings.findChildViewById(rootView, id);
+      if (chooseImageButton == null) {
+        break missingId;
+      }
+
       id = R.id.editProductScroll;
       NestedScrollView editProductScroll = ViewBindings.findChildViewById(rootView, id);
       if (editProductScroll == null) {
@@ -136,6 +152,12 @@ public final class FragmentEditProductBinding implements ViewBinding {
       id = R.id.productDescriptionLayout;
       TextInputLayout productDescriptionLayout = ViewBindings.findChildViewById(rootView, id);
       if (productDescriptionLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.productImage;
+      ImageView productImage = ViewBindings.findChildViewById(rootView, id);
+      if (productImage == null) {
         break missingId;
       }
 
@@ -181,10 +203,11 @@ public final class FragmentEditProductBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentEditProductBinding((ConstraintLayout) rootView, editProductScroll,
-          productCategoryInput, productCategoryLayout, productDescriptionInput,
-          productDescriptionLayout, productNameInput, productNameLayout, productPriceInput,
-          productPriceLayout, productStockInput, productStockLayout, saveProductButton);
+      return new FragmentEditProductBinding((ConstraintLayout) rootView, chooseImageButton,
+          editProductScroll, productCategoryInput, productCategoryLayout, productDescriptionInput,
+          productDescriptionLayout, productImage, productNameInput, productNameLayout,
+          productPriceInput, productPriceLayout, productStockInput, productStockLayout,
+          saveProductButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

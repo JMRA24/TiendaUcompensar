@@ -22,6 +22,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final MaterialButton editProfileButton;
+
+  @NonNull
   public final MaterialButton logoutButton;
 
   @NonNull
@@ -37,10 +40,11 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final TextView profilePhone;
 
   private FragmentProfileBinding(@NonNull NestedScrollView rootView,
-      @NonNull MaterialButton logoutButton, @NonNull RecyclerView orderHistoryRecyclerView,
-      @NonNull TextView profileEmail, @NonNull TextView profileName,
-      @NonNull TextView profilePhone) {
+      @NonNull MaterialButton editProfileButton, @NonNull MaterialButton logoutButton,
+      @NonNull RecyclerView orderHistoryRecyclerView, @NonNull TextView profileEmail,
+      @NonNull TextView profileName, @NonNull TextView profilePhone) {
     this.rootView = rootView;
+    this.editProfileButton = editProfileButton;
     this.logoutButton = logoutButton;
     this.orderHistoryRecyclerView = orderHistoryRecyclerView;
     this.profileEmail = profileEmail;
@@ -75,6 +79,12 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.editProfileButton;
+      MaterialButton editProfileButton = ViewBindings.findChildViewById(rootView, id);
+      if (editProfileButton == null) {
+        break missingId;
+      }
+
       id = R.id.logoutButton;
       MaterialButton logoutButton = ViewBindings.findChildViewById(rootView, id);
       if (logoutButton == null) {
@@ -105,8 +115,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((NestedScrollView) rootView, logoutButton,
-          orderHistoryRecyclerView, profileEmail, profileName, profilePhone);
+      return new FragmentProfileBinding((NestedScrollView) rootView, editProfileButton,
+          logoutButton, orderHistoryRecyclerView, profileEmail, profileName, profilePhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,10 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.project.store.R
+import com.project.store.data.model.Order
+import com.project.store.data.model.Product
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentSalesReportBinding
-import com.project.store.utils.MockRepository
+import kotlinx.coroutines.launch
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -15,6 +20,7 @@ class SalesReportFragment : Fragment() {
 
     private var _binding: FragmentSalesReportBinding? = null
     private val binding get() = _binding!!
+    private val repository = FirebaseRepository.getInstance()
     private val currencyFormatter = NumberFormat.getCurrencyInstance(Locale("es", "CO"))
 
     override fun onCreateView(
@@ -37,18 +43,43 @@ class SalesReportFragment : Fragment() {
     }
 
     private fun bindReport() {
-        val revenue = MockRepository.orders.sumOf { it.total }
-        val totalOrders = MockRepository.orders.size
+        viewLifecycleOwner.lifecycleScope.launch {
+            val ordersResult = repository.getAllOrders()
+            val productsResult = repository.getProducts()
+
+            val orders = ordersResult.getOrElse { error ->
+                if (error.message?.contains("UNAVAILABLE") == true ||
+                    error.message?.contains("network") == true
+                ) {
+                    Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                }
+                emptyList()
+            }
+            val products = productsResult.getOrElse { error ->
+                if (error.message?.contains("UNAVAILABLE") == true ||
+                    error.message?.contains("network") == true
+                ) {
+                    Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                }
+                emptyList()
+            }
+
+            bindReportData(orders, products)
+        }
+    }
+
+    private fun bindReportData(orders: List<Order>, products: List<Product>) {
+        val revenue = orders.sumOf { it.total }
+        val totalOrders = orders.size
         binding.reportTotalRevenue.text = currencyFormatter.format(revenue)
         binding.reportTotalOrders.text = totalOrders.toString()
 
-        val categoryRevenue = MockRepository.categories.associateWith { category ->
-            MockRepository.orders.sumOf { order ->
-                order.products.filter { item ->
-                    MockRepository.findProductById(item.productId)?.categoryId == category.id
-                }.sumOf { it.subtotal }
-            }
-        }
+        val productsById = products.associateBy { it.id }
+        val categoryRevenue = orders
+            .groupBy { productsById[it.productId]?.category.orEmpty() }
+            .filterKeys { it.isNotBlank() }
+            .mapValues { entry -> entry.value.sumOf { it.total } }
+
         val topCategory = categoryRevenue.maxByOrNull { it.value }
         val percent = if (revenue > 0.0 && topCategory != null) {
             (topCategory.value * PERCENT_MAX / revenue).toInt()
@@ -58,7 +89,7 @@ class SalesReportFragment : Fragment() {
         binding.categoryRevenueLabel.text = if (topCategory != null) {
             getString(
                 R.string.admin_metric_format,
-                topCategory.key.name,
+                topCategory.key,
                 currencyFormatter.format(topCategory.value)
             )
         } else {
@@ -66,12 +97,14 @@ class SalesReportFragment : Fragment() {
         }
         binding.categoryRevenueBar.progress = percent
 
-        binding.topProducts.text = buildTopProductsText()
+        binding.topProducts.text = buildTopProductsText(orders, productsById)
     }
 
-    private fun buildTopProductsText(): String {
-        val unitsByProduct = MockRepository.orders
-            .flatMap { it.products }
+    private fun buildTopProductsText(
+        orders: List<Order>,
+        productsById: Map<String, Product>
+    ): String {
+        val unitsByProduct = orders
             .groupBy { it.productId }
             .mapValues { entry -> entry.value.sumOf { it.quantity } }
             .entries
@@ -81,7 +114,7 @@ class SalesReportFragment : Fragment() {
         if (unitsByProduct.isEmpty()) return getString(R.string.report_no_data)
 
         return unitsByProduct.joinToString(separator = System.lineSeparator()) { entry ->
-            val productName = MockRepository.findProductById(entry.key)?.name.orEmpty()
+            val productName = productsById[entry.key]?.name.orEmpty()
             getString(R.string.report_top_product_line, productName, entry.value)
         }
     }

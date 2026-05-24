@@ -13,9 +13,11 @@ data class Order(
 }
 
 data class OrderItem(
-    val productId: Int,
-    val quantity: Int,
-    val unitPrice: Double
+    val productId: Int = 0,
+    val productName: String = "",
+    val productImage: String = "",
+    val quantity: Int = 1,
+    val unitPrice: Double = 0.0
 ) {
     val subtotal: Double
         get() = quantity * unitPrice

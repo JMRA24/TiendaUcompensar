@@ -85,6 +85,11 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array assume_strong_biometrics_models
+array crypto_fingerprint_fallback_prefixes
+array crypto_fingerprint_fallback_vendors
+array delay_showing_prompt_models
+array hide_fingerprint_instantly_prefixes
 attr SharedValue
 attr SharedValueId
 attr action
@@ -240,6 +245,7 @@ attr buttonIconDimen
 attr buttonIconTint
 attr buttonIconTintMode
 attr buttonPanelSideLayout
+attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
@@ -300,6 +306,7 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr circleCrop
 attr circleRadius
 attr circularProgressIndicatorStyle
 attr circularflow_angles
@@ -374,6 +381,7 @@ attr colorPrimaryFixedDim
 attr colorPrimaryInverse
 attr colorPrimarySurface
 attr colorPrimaryVariant
+attr colorScheme
 attr colorSecondary
 attr colorSecondaryContainer
 attr colorSecondaryFixed
@@ -660,6 +668,8 @@ attr iconTintMode
 attr iconifiedByDefault
 attr ifTagNotSet
 attr ifTagSet
+attr imageAspectRatio
+attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr imagePanX
 attr imagePanY
@@ -1046,6 +1056,7 @@ attr roundPercent
 attr route
 attr saturation
 attr scaleFromTextSize
+attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -1412,12 +1423,17 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color biometric_error_color
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -1537,6 +1553,17 @@ color color_text_tertiary
 color color_top_app_bar_background
 color color_warning
 color color_warning_container
+color common_google_signin_btn_text_dark
+color common_google_signin_btn_text_dark_default
+color common_google_signin_btn_text_dark_disabled
+color common_google_signin_btn_text_dark_focused
+color common_google_signin_btn_text_dark_pressed
+color common_google_signin_btn_text_light
+color common_google_signin_btn_text_light_default
+color common_google_signin_btn_text_light_disabled
+color common_google_signin_btn_text_light_focused
+color common_google_signin_btn_text_light_pressed
+color common_google_signin_btn_tint
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2364,6 +2391,8 @@ dimen bottom_nav_label_size
 dimen bottom_sheet_drag_handle_height
 dimen bottom_sheet_drag_handle_width
 dimen bottom_sheet_peek_height
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen btn_height
 dimen btn_height_large
 dimen btn_height_small
@@ -2463,6 +2492,7 @@ dimen fab_size
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen fingerprint_icon_size
 dimen grid_item_spacing
 dimen grid_spacing
 dimen hero_height
@@ -3309,6 +3339,25 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable common_full_open_on_phone
+drawable common_google_signin_btn_icon_dark
+drawable common_google_signin_btn_icon_dark_focused
+drawable common_google_signin_btn_icon_dark_normal
+drawable common_google_signin_btn_icon_dark_normal_background
+drawable common_google_signin_btn_icon_disabled
+drawable common_google_signin_btn_icon_light
+drawable common_google_signin_btn_icon_light_focused
+drawable common_google_signin_btn_icon_light_normal
+drawable common_google_signin_btn_icon_light_normal_background
+drawable common_google_signin_btn_text_dark
+drawable common_google_signin_btn_text_dark_focused
+drawable common_google_signin_btn_text_dark_normal
+drawable common_google_signin_btn_text_dark_normal_background
+drawable common_google_signin_btn_text_disabled
+drawable common_google_signin_btn_text_light
+drawable common_google_signin_btn_text_light_focused
+drawable common_google_signin_btn_text_light_normal
+drawable common_google_signin_btn_text_light_normal_background
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable design_fab_background
@@ -3316,6 +3365,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fingerprint_dialog_error
+drawable fingerprint_dialog_fp_icon
+drawable googleg_disabled_color_18
+drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3345,6 +3398,9 @@ drawable ic_nav_products
 drawable ic_nav_profile
 drawable ic_nav_reports
 drawable ic_nav_users
+drawable ic_other_sign_in
+drawable ic_passkey
+drawable ic_password
 drawable ic_placeholder_product
 drawable ic_search_black_24
 drawable ic_store_logo
@@ -3511,6 +3567,8 @@ id addToCartButton
 id addUserFab
 id addressInput
 id addressLayout
+id adjust_height
+id adjust_width
 id adminProductsCount
 id adminProductsRecyclerView
 id adminUsersBar
@@ -3550,10 +3608,17 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
+id btnPay
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardFieldsContainer
 id carryVelocity
 id cartProductImage
 id cartProductName
@@ -3612,11 +3677,14 @@ id currentState
 id custom
 id customPanel
 id cut
+id dark
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
+id deleteCartItemButton
 id deleteUserButton
 id deltaRelative
 id dependency_ordering
@@ -3649,6 +3717,8 @@ id easeOut
 id east
 id edge
 id editProductScroll
+id editProfileButton
+id editSellerProfileButton
 id editUserScroll
 id edit_query
 id edit_text_id
@@ -3661,6 +3731,10 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etCardCvv
+id etCardExpiry
+id etCardName
+id etCardNumber
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3671,6 +3745,10 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filterChipGroup
+id fingerprint_description
+id fingerprint_error
+id fingerprint_icon
+id fingerprint_subtitle
 id fitCenter
 id fitEnd
 id fitStart
@@ -3691,6 +3769,7 @@ id fullNameLayout
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id googleLoginButton
 id graph
@@ -3710,6 +3789,7 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3730,6 +3810,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id light
 id line1
 id line3
 id linear
@@ -3903,6 +3984,7 @@ id pathRelative
 id paymentCard
 id paymentCash
 id paymentMethodGroup
+id paymentProgress
 id paymentTransfer
 id peekHeight
 id percent
@@ -3946,6 +4028,10 @@ id profilePhone
 id progress_circular
 id progress_horizontal
 id radio
+id radioCard
+id radioNequi
+id radioPSE
+id radioPaymentMethod
 id ratio
 id rectangles
 id reportTotalOrders
@@ -3990,6 +4076,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id sellerEmail
+id sellerLogoutButton
 id sellerName
 id sellerOrdersCount
 id sellerOrdersRecyclerView
@@ -4096,6 +4183,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvPaymentAmount
+id tvPaymentTitle
 id unchecked
 id uniform
 id unlabeled
@@ -4131,6 +4220,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id west
+id wide
 id withText
 id with_icon
 id withinBounds
@@ -4149,6 +4239,7 @@ integer config_tooltipAnimTime
 integer default_icon_animation_duration
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
 integer m3_badge_max_number
 integer m3_btn_anim_delay_ms
@@ -4261,6 +4352,9 @@ layout activity_forgot_password
 layout activity_login
 layout activity_seller
 layout activity_splash
+layout bottom_sheet_payment
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4277,6 +4371,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fingerprint_dialog_layout
 layout fragment_admin_dashboard
 layout fragment_admin_products
 layout fragment_cart
@@ -4377,6 +4472,7 @@ navigation nav_buyer
 navigation nav_seller
 plurals catalog_results_quantity
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4454,12 +4550,18 @@ string admin_stat_total_users
 string admin_users_count
 string admin_users_title
 string already_in_cart
+string android_credentials_TYPE_PASSWORD_CREDENTIAL
+string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_name
 string app_tagline
 string app_version
 string appbar_scrolling_view_behavior
 string biometric_login_success
+string biometric_negative
+string biometric_not_available
+string biometric_subtitle
+string biometric_title
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -4472,6 +4574,7 @@ string btn_add_user
 string btn_apply_filters
 string btn_biometric_login
 string btn_buy_now
+string btn_cancel
 string btn_checkout
 string btn_choose_image
 string btn_clear_cart
@@ -4486,6 +4589,7 @@ string btn_logout
 string btn_my_orders
 string btn_place_order
 string btn_reset_password
+string btn_save
 string btn_save_product
 string btn_save_product_changes
 string btn_save_user
@@ -4552,8 +4656,30 @@ string checkout_section_payment
 string checkout_section_summary
 string checkout_title
 string clear_text_end_icon_content_description
+string common_google_play_services_enable_button
+string common_google_play_services_enable_text
+string common_google_play_services_enable_title
+string common_google_play_services_install_button
+string common_google_play_services_install_text
+string common_google_play_services_install_title
+string common_google_play_services_notification_channel_name
+string common_google_play_services_notification_ticker
+string common_google_play_services_unknown_issue
+string common_google_play_services_unsupported_text
+string common_google_play_services_update_button
+string common_google_play_services_update_text
+string common_google_play_services_update_title
+string common_google_play_services_updating_text
+string common_google_play_services_wear_update_text
+string common_open_on_phone
+string common_signin_button_text
+string common_signin_button_text_long
+string confirm_device_credential_password
+string copy_toast_msg
 string create_product_title
 string create_user_title
+string default_error_msg
+string default_web_client_id
 string dest_title
 string dialog_activate_user_message
 string dialog_block_user_message
@@ -4572,6 +4698,7 @@ string edit_product_title
 string edit_user_title
 string error_a11y_label
 string error_address_required
+string error_auth
 string error_city_required
 string error_email_empty
 string error_email_invalid
@@ -4582,6 +4709,7 @@ string error_icon_content_description
 string error_invalid_credentials
 string error_invalid_format
 string error_name_required
+string error_network
 string error_no_internet
 string error_no_results
 string error_otp_empty
@@ -4602,6 +4730,7 @@ string error_product_stock_invalid
 string error_product_stock_required
 string error_server
 string error_timeout
+string error_unknown
 string error_user_email_invalid
 string error_user_email_required
 string error_user_name_required
@@ -4612,6 +4741,9 @@ string error_user_role_required
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string filter_all_categories
 string filter_available_only
 string filter_category
@@ -4620,6 +4752,13 @@ string filter_min_price
 string filter_price_range
 string filter_role_all
 string filter_sheet_title
+string fingerprint_dialog_touch_sensor
+string fingerprint_error_hw_not_available
+string fingerprint_error_hw_not_present
+string fingerprint_error_lockout
+string fingerprint_error_no_fingerprints
+string fingerprint_error_user_canceled
+string fingerprint_not_recognized
 string forgot_password_otp_helper
 string forgot_password_subtitle
 string forgot_password_title
@@ -4629,7 +4768,15 @@ string format_percentage
 string format_price
 string format_quantity
 string format_stock
+string gcm_defaultSenderId
+string generic_error_no_device_credential
+string generic_error_no_keyguard
+string generic_error_user_canceled
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
 string google_login_simulated
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string hint_address
 string hint_city
@@ -4700,6 +4847,9 @@ string label_user_status
 string label_zip_code
 string link_back_to_login
 string link_forgot_password
+string location_button_text
+string location_error
+string location_permission_denied
 string login_divider_continue
 string login_remember_me
 string login_subtitle
@@ -4833,8 +4983,21 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string payment_approved
+string payment_button
 string payment_card
+string payment_card_cvv
+string payment_card_expiry
+string payment_card_name
+string payment_card_number
 string payment_cash
+string payment_method_label
+string payment_nequi
+string payment_pse
+string payment_rejected
+string payment_title
+string payment_total
+string payment_transaction
 string payment_transfer
 string product_created_success
 string product_deleted_success
@@ -4862,12 +5025,17 @@ string product_status_inactive
 string product_stock_label
 string product_updated_success
 string profile_contact_title
+string profile_edit_title
+string profile_name_hint
 string profile_no_orders
 string profile_orders_count
+string profile_phone_hint
+string profile_save_success
 string profile_section_info
 string profile_section_orders
 string profile_section_settings
 string profile_title
+string project_id
 string report_avg_order_value
 string report_chart_orders
 string report_chart_revenue
@@ -4936,9 +5104,11 @@ string state_empty
 string state_error
 string state_loading
 string status_bar_notification_info_overflow
+string success_deleted
 string success_otp_sent
 string success_password_updated
 string success_reset_email_sent
+string success_saved
 string summary_shipping
 string summary_subtotal
 string summary_total
@@ -4950,6 +5120,7 @@ string user_status_active
 string user_status_blocked
 string user_status_inactive
 string user_updated_success
+string web_client_id
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -5538,6 +5709,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_Hidden
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog
@@ -5615,6 +5787,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_PlayCore_Transparent
 style Theme_SplashScreen
 style Theme_SplashScreen_Common
 style Theme_SplashScreen_IconBackground
@@ -6249,6 +6422,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear trackStopIndicatorSize
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop backgroundTint
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType android_popupElevation dropDownBackgroundTint simpleItemLayout simpleItemSelectedColor simpleItemSelectedRippleColor simpleItems
@@ -6306,6 +6480,7 @@ styleable SearchView android_textAppearance android_focusable android_maxWidth a
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable SideSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable coplanarSiblingViewId shapeAppearance shapeAppearanceOverlay
+styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle minTouchTargetSize thumbColor thumbElevation thumbHeight thumbRadius thumbStrokeColor thumbStrokeWidth thumbTrackGapSize thumbWidth tickColor tickColorActive tickColorInactive tickRadiusActive tickRadiusInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight trackInsideCornerSize trackStopIndicatorSize
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth shapeAppearance shapeAppearanceOverlay
@@ -6337,3 +6512,4 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml image_share_filepaths

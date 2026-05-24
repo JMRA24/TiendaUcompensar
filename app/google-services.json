@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372238109572",
+    "project_id": "tiendavirtual-bc54a",
+    "storage_bucket": "tiendavirtual-bc54a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372238109572:android:e0c9341017f606a615ebd1",
+        "android_client_info": {
+          "package_name": "com.project.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372238109572-jnjkis4gsbk32952r1nfselil7j383p7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.store",
+            "certificate_hash": "f49f386e5cc50fcf6196681abafb94785c9f203a"
+          }
+        },
+        {
+          "client_id": "372238109572-o8gem1vq9k8rgr82kj5nrhnq2j3muhbu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNPlY2uDPY-ywyzxlAvnoc0H395rsZx5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372238109572-o8gem1vq9k8rgr82kj5nrhnq2j3muhbu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

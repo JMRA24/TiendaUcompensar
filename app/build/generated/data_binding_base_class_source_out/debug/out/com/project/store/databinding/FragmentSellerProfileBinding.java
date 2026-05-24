@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
 import com.project.store.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,7 +21,13 @@ public final class FragmentSellerProfileBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final MaterialButton editSellerProfileButton;
+
+  @NonNull
   public final TextView sellerEmail;
+
+  @NonNull
+  public final MaterialButton sellerLogoutButton;
 
   @NonNull
   public final TextView sellerName;
@@ -35,10 +42,14 @@ public final class FragmentSellerProfileBinding implements ViewBinding {
   public final TextView sellerSalesStat;
 
   private FragmentSellerProfileBinding(@NonNull NestedScrollView rootView,
-      @NonNull TextView sellerEmail, @NonNull TextView sellerName, @NonNull TextView sellerPhone,
-      @NonNull TextView sellerProductsStat, @NonNull TextView sellerSalesStat) {
+      @NonNull MaterialButton editSellerProfileButton, @NonNull TextView sellerEmail,
+      @NonNull MaterialButton sellerLogoutButton, @NonNull TextView sellerName,
+      @NonNull TextView sellerPhone, @NonNull TextView sellerProductsStat,
+      @NonNull TextView sellerSalesStat) {
     this.rootView = rootView;
+    this.editSellerProfileButton = editSellerProfileButton;
     this.sellerEmail = sellerEmail;
+    this.sellerLogoutButton = sellerLogoutButton;
     this.sellerName = sellerName;
     this.sellerPhone = sellerPhone;
     this.sellerProductsStat = sellerProductsStat;
@@ -72,9 +83,21 @@ public final class FragmentSellerProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.editSellerProfileButton;
+      MaterialButton editSellerProfileButton = ViewBindings.findChildViewById(rootView, id);
+      if (editSellerProfileButton == null) {
+        break missingId;
+      }
+
       id = R.id.sellerEmail;
       TextView sellerEmail = ViewBindings.findChildViewById(rootView, id);
       if (sellerEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.sellerLogoutButton;
+      MaterialButton sellerLogoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (sellerLogoutButton == null) {
         break missingId;
       }
 
@@ -102,8 +125,9 @@ public final class FragmentSellerProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSellerProfileBinding((NestedScrollView) rootView, sellerEmail, sellerName,
-          sellerPhone, sellerProductsStat, sellerSalesStat);
+      return new FragmentSellerProfileBinding((NestedScrollView) rootView, editSellerProfileButton,
+          sellerEmail, sellerLogoutButton, sellerName, sellerPhone, sellerProductsStat,
+          sellerSalesStat);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

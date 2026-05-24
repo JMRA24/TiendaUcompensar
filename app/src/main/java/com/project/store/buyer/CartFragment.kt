@@ -45,7 +45,10 @@ class CartFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        cartAdapter = CartAdapter(CartManager.getItems())
+        cartAdapter = CartAdapter(CartManager.getItems()) { item ->
+            CartManager.removeItem(item.productId)
+            refreshCart()
+        }
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = cartAdapter
     }
@@ -63,5 +66,10 @@ class CartFragment : Fragment() {
             R.string.summary_total,
             currencyFormatter.format(CartManager.getTotal())
         )
+    }
+
+    private fun refreshCart() {
+        cartAdapter.submitList(CartManager.getItems())
+        bindTotals()
     }
 }

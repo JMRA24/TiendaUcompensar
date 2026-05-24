@@ -296,7 +296,7 @@
     <string name="admin_product_seller_label">Vendedor: %1$s</string>
     <string name="admin_products_count">%1$d productos en total</string>
     <string name="admin_products_title">Todos los productos</string>
-    <string name="admin_recent_activity_mock">Última sincronización mock completada</string>
+    <string name="admin_recent_activity_mock">Datos sincronizados con Firebase en tiempo real.</string>
     <string name="admin_section_quick_actions">Acciones rápidas</string>
     <string name="admin_section_recent_activity">Actividad reciente</string>
     <string name="admin_section_system_overview">Resumen del sistema</string>
@@ -312,12 +312,17 @@
     <string name="app_version">Versión %1$s</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="biometric_login_success">Biometría simulada aprobada para %1$s</string>
+    <string name="biometric_negative">Cancelar</string>
+    <string name="biometric_not_available">Biometría no disponible en este dispositivo</string>
+    <string name="biometric_subtitle">Usa tu huella o rostro para ingresar</string>
+    <string name="biometric_title">Verificación biométrica</string>
     <string name="btn_add_product">Agregar producto</string>
     <string name="btn_add_to_cart">Agregar al carrito</string>
     <string name="btn_add_user">Agregar usuario</string>
     <string name="btn_apply_filters">Aplicar filtros</string>
     <string name="btn_biometric_login">Ingresar con biometría</string>
     <string name="btn_buy_now">Comprar ahora</string>
+    <string name="btn_cancel">Cancelar</string>
     <string name="btn_checkout">Proceder al pago</string>
     <string name="btn_choose_image">Seleccionar imagen</string>
     <string name="btn_clear_cart">Vaciar carrito</string>
@@ -332,6 +337,7 @@
     <string name="btn_my_orders">Ver mis pedidos</string>
     <string name="btn_place_order">Confirmar pedido</string>
     <string name="btn_reset_password">Actualizar contraseña</string>
+    <string name="btn_save">Guardar</string>
     <string name="btn_save_product">Guardar producto</string>
     <string name="btn_save_product_changes">Guardar cambios</string>
     <string name="btn_save_user">Guardar usuario</string>
@@ -389,6 +395,7 @@
     <string name="checkout_title">Resumen del pedido</string>
     <string name="create_product_title">Nuevo producto</string>
     <string name="create_user_title">Nuevo usuario</string>
+    <string name="default_web_client_id" translatable="false">372238109572-o8gem1vq9k8rgr82kj5nrhnq2j3muhbu.apps.googleusercontent.com</string>
     <string name="dialog_activate_user_message">¿Deseas activar la cuenta de \"%1$s\"?</string>
     <string name="dialog_block_user_message">¿Deseas bloquear a \"%1$s\"? No podrá acceder a la aplicación.</string>
     <string name="dialog_clear_cart_message">¿Estás seguro de que deseas eliminar todos los artículos del carrito?</string>
@@ -405,6 +412,7 @@
     <string name="edit_product_title">Editar producto</string>
     <string name="edit_user_title">Editar usuario</string>
     <string name="error_address_required">Ingresa tu dirección de envío</string>
+    <string name="error_auth">Error de autenticación. Verifica tus credenciales.</string>
     <string name="error_city_required">Ingresa tu ciudad</string>
     <string name="error_email_empty">Ingresa tu correo electrónico</string>
     <string name="error_email_invalid">Ingresa un correo electrónico válido</string>
@@ -414,6 +422,7 @@
     <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
     <string name="error_invalid_format">Formato inválido</string>
     <string name="error_name_required">Ingresa tu nombre completo</string>
+    <string name="error_network">Error de red. Intenta de nuevo.</string>
     <string name="error_no_internet">Sin conexión a internet. Verifica tu red e intenta de nuevo.</string>
     <string name="error_no_results">No encontramos resultados</string>
     <string name="error_otp_empty">Ingresa el código OTP</string>
@@ -434,6 +443,7 @@
     <string name="error_product_stock_required">Ingresa el stock disponible</string>
     <string name="error_server">Error en el servidor. Por favor, intenta más tarde.</string>
     <string name="error_timeout">La solicitud tardó demasiado. Por favor, intenta de nuevo.</string>
+    <string name="error_unknown">Error desconocido. Intenta de nuevo.</string>
     <string name="error_user_email_invalid">Ingresa un correo válido para el usuario</string>
     <string name="error_user_email_required">Ingresa el correo del usuario</string>
     <string name="error_user_name_required">Ingresa el nombre del usuario</string>
@@ -458,7 +468,12 @@
     <string name="format_price">$%1$s</string>
     <string name="format_quantity">× %1$d</string>
     <string name="format_stock">%1$d en stock</string>
+    <string name="gcm_defaultSenderId" translatable="false">372238109572</string>
+    <string name="google_api_key" translatable="false">AIzaSyBNPlY2uDPY-ywyzxlAvnoc0H395rsZx5E</string>
+    <string name="google_app_id" translatable="false">1:372238109572:android:e0c9341017f606a615ebd1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBNPlY2uDPY-ywyzxlAvnoc0H395rsZx5E</string>
     <string name="google_login_simulated">Inicio de sesión con Google simulado</string>
+    <string name="google_storage_bucket" translatable="false">tiendavirtual-bc54a.firebasestorage.app</string>
     <string name="hint_address">Calle 123 # 45-67, Apto 8</string>
     <string name="hint_city">Bogotá</string>
     <string name="hint_confirm_password">Repite tu nueva contraseña</string>
@@ -526,10 +541,13 @@
     <string name="label_zip_code">Código postal</string>
     <string name="link_back_to_login">Volver al inicio de sesión</string>
     <string name="link_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="location_button_text">📍 Usar mi ubicación</string>
+    <string name="location_error">No se pudo obtener la ubicación</string>
+    <string name="location_permission_denied">Permiso de ubicación denegado</string>
     <string name="login_divider_continue">O continúa con</string>
     <string name="login_remember_me">Recordarme</string>
     <string name="login_subtitle">Inicia sesión para continuar</string>
-    <string name="login_success_simulated">Inicio de sesión simulado para %1$s</string>
+    <string name="login_success_simulated">Bienvenido, %s</string>
     <string name="login_title">Bienvenido</string>
     <string name="nav_cart">Carrito</string>
     <string name="nav_catalog">Catálogo</string>
@@ -552,8 +570,21 @@
     <string name="order_status_updated_success">Estado del pedido actualizado</string>
     <string name="order_success_subtitle">Tu pedido ha sido recibido y está siendo procesado</string>
     <string name="order_success_title">¡Pedido confirmado!</string>
+    <string name="payment_approved">✅ Pago aprobado</string>
+    <string name="payment_button">Pagar %s</string>
     <string name="payment_card">Tarjeta de crédito/débito</string>
+    <string name="payment_card_cvv">CVV</string>
+    <string name="payment_card_expiry">MM/AA</string>
+    <string name="payment_card_name">Nombre en la tarjeta</string>
+    <string name="payment_card_number">Número de tarjeta</string>
     <string name="payment_cash">Contra entrega</string>
+    <string name="payment_method_label">Método de pago</string>
+    <string name="payment_nequi">Nequi</string>
+    <string name="payment_pse">PSE - Débito bancario</string>
+    <string name="payment_rejected">❌ Pago rechazado, intenta de nuevo</string>
+    <string name="payment_title">Realizar pago</string>
+    <string name="payment_total">Total a pagar: %s</string>
+    <string name="payment_transaction">Transacción: %s</string>
     <string name="payment_transfer">Transferencia bancaria</string>
     <string name="product_created_success">Producto creado exitosamente</string>
     <string name="product_deleted_success">Producto eliminado exitosamente</string>
@@ -581,12 +612,17 @@
     <string name="product_stock_label">Stock: %1$d</string>
     <string name="product_updated_success">Producto actualizado exitosamente</string>
     <string name="profile_contact_title">Datos de contacto</string>
+    <string name="profile_edit_title">Editar perfil</string>
+    <string name="profile_name_hint">Nombre completo</string>
     <string name="profile_no_orders">Aún no tienes pedidos</string>
     <string name="profile_orders_count">%1$d pedidos realizados</string>
+    <string name="profile_phone_hint">Teléfono</string>
+    <string name="profile_save_success">Perfil actualizado correctamente</string>
     <string name="profile_section_info">Información personal</string>
     <string name="profile_section_orders">Mis pedidos</string>
     <string name="profile_section_settings">Configuración</string>
     <string name="profile_title">Mi perfil</string>
+    <string name="project_id" translatable="false">tiendavirtual-bc54a</string>
     <string name="report_avg_order_value">Valor promedio por pedido</string>
     <string name="report_chart_orders">Pedidos por estado</string>
     <string name="report_chart_revenue">Ingresos por categoría</string>
@@ -636,7 +672,7 @@
     <string name="seller_store_name">Nombre de la tienda</string>
     <string name="seller_total_products_label">Total productos</string>
     <string name="seller_total_sales_label">Total ventas</string>
-    <string name="simulated_otp_code" translatable="false">123456</string>
+    <string name="simulated_otp_code" translatable="false">firebase_reset</string>
     <string name="sort_name_asc">Nombre: A–Z</string>
     <string name="sort_name_desc">Nombre: Z–A</string>
     <string name="sort_newest">Más recientes</string>
@@ -648,9 +684,11 @@
     <string name="state_empty">Sin resultados</string>
     <string name="state_error">Algo salió mal</string>
     <string name="state_loading">Cargando…</string>
-    <string name="success_otp_sent">OTP simulado enviado: %1$s</string>
+    <string name="success_deleted">Eliminado correctamente</string>
+    <string name="success_otp_sent">Correo de recuperación enviado</string>
     <string name="success_password_updated">Contraseña actualizada correctamente</string>
     <string name="success_reset_email_sent">Correo enviado. Revisa tu bandeja de entrada.</string>
+    <string name="success_saved">Guardado correctamente</string>
     <string name="summary_shipping">Envío: %1$s</string>
     <string name="summary_subtotal">Subtotal: %1$s</string>
     <string name="summary_total">Total: %1$s</string>
@@ -662,6 +700,7 @@
     <string name="user_status_blocked">Bloqueado</string>
     <string name="user_status_inactive">Inactivo</string>
     <string name="user_updated_success">Usuario actualizado exitosamente</string>
+    <string name="web_client_id">372238109572-o8gem1vq9k8rgr82kj5nrhnq2j3muhbu.apps.googleusercontent.com</string>
     <style name="Base.Theme.TiendaVirtual" parent="Theme.Material3.DayNight.NoActionBar">
 
         

@@ -37,6 +37,8 @@
     <string name="action_apply">Aplicar</string>
     <string name="action_clear">Limpiar</string>
     <string name="action_undo">Deshacer</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_cancel">Cancelar</string>
 
     <!-- ================================================================== -->
     <!-- ESTADOS GLOBALES                                                    -->
@@ -55,6 +57,14 @@
     <string name="error_field_required">Este campo es obligatorio</string>
     <string name="error_invalid_format">Formato inválido</string>
     <string name="error_no_results">No encontramos resultados</string>
+    <string name="error_network">Error de red. Intenta de nuevo.</string>
+    <string name="error_auth">Error de autenticación. Verifica tus credenciales.</string>
+    <string name="error_unknown">Error desconocido. Intenta de nuevo.</string>
+    <string name="success_saved">Guardado correctamente</string>
+    <string name="success_deleted">Eliminado correctamente</string>
+    <string name="location_permission_denied">Permiso de ubicación denegado</string>
+    <string name="location_error">No se pudo obtener la ubicación</string>
+    <string name="location_button_text">📍 Usar mi ubicación</string>
 
     <!-- ================================================================== -->
     <!-- AUTH — SPLASH                                                       -->
@@ -78,8 +88,12 @@
     <string name="google_login_simulated">Inicio de sesión con Google simulado</string>
     <string name="link_forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="login_remember_me">Recordarme</string>
-    <string name="login_success_simulated">Inicio de sesión simulado para %1$s</string>
+    <string name="login_success_simulated">Bienvenido, %s</string>
     <string name="biometric_login_success">Biometría simulada aprobada para %1$s</string>
+    <string name="biometric_title">Verificación biométrica</string>
+    <string name="biometric_subtitle">Usa tu huella o rostro para ingresar</string>
+    <string name="biometric_negative">Cancelar</string>
+    <string name="biometric_not_available">Biometría no disponible en este dispositivo</string>
     <string name="error_email_empty">Ingresa tu correo electrónico</string>
     <string name="error_email_invalid">Ingresa un correo electrónico válido</string>
     <string name="error_password_empty">Ingresa tu contraseña</string>
@@ -100,8 +114,9 @@
     <string name="label_confirm_password">Confirmar contraseña</string>
     <string name="hint_confirm_password">Repite tu nueva contraseña</string>
     <string name="forgot_password_otp_helper">Usa el OTP simulado mostrado en pantalla para crear una nueva contraseña.</string>
-    <string name="simulated_otp_code" translatable="false">123456</string>
-    <string name="success_otp_sent">OTP simulado enviado: %1$s</string>
+    <string name="simulated_otp_code" translatable="false">firebase_reset</string>
+    <string name="web_client_id">372238109572-o8gem1vq9k8rgr82kj5nrhnq2j3muhbu.apps.googleusercontent.com</string>
+    <string name="success_otp_sent">Correo de recuperación enviado</string>
     <string name="success_reset_email_sent">Correo enviado. Revisa tu bandeja de entrada.</string>
     <string name="success_password_updated">Contraseña actualizada correctamente</string>
     <string name="error_email_not_found">No encontramos una cuenta con ese correo</string>
@@ -258,6 +273,19 @@
     <string name="payment_cash">Contra entrega</string>
     <string name="payment_card">Tarjeta de crédito/débito</string>
     <string name="payment_transfer">Transferencia bancaria</string>
+    <string name="payment_title">Realizar pago</string>
+    <string name="payment_total">Total a pagar: %s</string>
+    <string name="payment_button">Pagar %s</string>
+    <string name="payment_method_label">Método de pago</string>
+    <string name="payment_pse">PSE - Débito bancario</string>
+    <string name="payment_nequi">Nequi</string>
+    <string name="payment_card_number">Número de tarjeta</string>
+    <string name="payment_card_name">Nombre en la tarjeta</string>
+    <string name="payment_card_expiry">MM/AA</string>
+    <string name="payment_card_cvv">CVV</string>
+    <string name="payment_approved">✅ Pago aprobado</string>
+    <string name="payment_rejected">❌ Pago rechazado, intenta de nuevo</string>
+    <string name="payment_transaction">Transacción: %s</string>
     <string name="btn_place_order">Confirmar pedido</string>
     <string name="error_name_required">Ingresa tu nombre completo</string>
     <string name="error_address_required">Ingresa tu dirección de envío</string>
@@ -281,6 +309,10 @@
     <string name="profile_orders_count">%1$d pedidos realizados</string>
     <string name="profile_no_orders">Aún no tienes pedidos</string>
     <string name="btn_edit_profile">Editar perfil</string>
+    <string name="profile_edit_title">Editar perfil</string>
+    <string name="profile_name_hint">Nombre completo</string>
+    <string name="profile_phone_hint">Teléfono</string>
+    <string name="profile_save_success">Perfil actualizado correctamente</string>
     <string name="btn_my_orders">Ver mis pedidos</string>
     <string name="btn_logout">Cerrar sesión</string>
     <string name="dialog_logout_title">Cerrar sesión</string>
@@ -401,7 +433,7 @@
     <string name="admin_section_quick_actions">Acciones rápidas</string>
     <string name="admin_chart_users_by_role">Usuarios por rol</string>
     <string name="admin_chart_orders_by_status">Pedidos por estado</string>
-    <string name="admin_recent_activity_mock">Última sincronización mock completada</string>
+    <string name="admin_recent_activity_mock">Datos sincronizados con Firebase en tiempo real.</string>
     <string name="admin_metric_format">%1$s: %2$s</string>
 
     <!-- ================================================================== -->

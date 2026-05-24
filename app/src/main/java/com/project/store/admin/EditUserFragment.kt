@@ -7,18 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.project.store.R
+import com.project.store.data.model.User as FirebaseUserModel
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentEditUserBinding
-import com.project.store.models.User
 import com.project.store.models.UserRole
-import com.project.store.utils.MockRepository
+import kotlinx.coroutines.launch
 
 class EditUserFragment : Fragment() {
 
     private var _binding: FragmentEditUserBinding? = null
     private val binding get() = _binding!!
-    private var user: User? = null
+    private val repository = FirebaseRepository.getInstance()
+    private var user: FirebaseUserModel? = null
+    private var requestedUserId: Int = DEFAULT_USER_ID
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,17 +35,15 @@ class EditUserFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val userId = arguments?.getInt(ARG_USER_ID) ?: DEFAULT_USER_ID
-        user = MockRepository.users.firstOrNull { it.id == userId }
-        bindUser()
+        requestedUserId = arguments?.getInt(ARG_USER_ID) ?: DEFAULT_USER_ID
+        loadUser()
         updateStatusText(binding.userStatusSwitch.isChecked)
         binding.userStatusSwitch.setOnCheckedChangeListener { _, isChecked ->
             updateStatusText(isChecked)
         }
         binding.saveUserButton.setOnClickListener {
             if (validateForm()) {
-                Toast.makeText(requireContext(), R.string.user_updated_success, Toast.LENGTH_SHORT).show()
-                findNavController().navigateUp()
+                saveUser()
             }
         }
     }
@@ -53,10 +55,63 @@ class EditUserFragment : Fragment() {
 
     private fun bindUser() {
         val currentUser = user ?: return
-        binding.userNameInput.setText(currentUser.fullName)
+        binding.userNameInput.setText(currentUser.name)
         binding.userEmailInput.setText(currentUser.email)
         binding.userRoleInput.setText(roleLabel(currentUser.role))
-        binding.userStatusSwitch.isChecked = currentUser.isActive
+        binding.userStatusSwitch.isChecked = true
+    }
+
+    private fun loadUser() {
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.getAllUsers()
+                .onSuccess { users ->
+                    user = users.firstOrNull { it.id.hashCode() == requestedUserId }
+                    bindUser()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            setLoading(false)
+        }
+    }
+
+    private fun saveUser() {
+        val currentUser = user ?: return
+        val updatedUser = currentUser.copy(
+            name = binding.userNameInput.text?.toString()?.trim().orEmpty(),
+            email = binding.userEmailInput.text?.toString()?.trim().orEmpty(),
+            role = binding.userRoleInput.text?.toString()?.trim().orEmpty().toFirebaseRole()
+        )
+
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.updateUserProfile(updatedUser)
+                .onSuccess {
+                    Toast.makeText(requireContext(), R.string.user_updated_success, Toast.LENGTH_SHORT).show()
+                    findNavController().navigateUp()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            setLoading(false)
+        }
+    }
+
+    private fun setLoading(isLoading: Boolean) {
+        binding.saveUserButton.isEnabled = !isLoading
+        binding.userNameInput.isEnabled = !isLoading
+        binding.userEmailInput.isEnabled = !isLoading
+        binding.userRoleInput.isEnabled = !isLoading
+        binding.userStatusSwitch.isEnabled = !isLoading
     }
 
     private fun validateForm(): Boolean {
@@ -96,10 +151,16 @@ class EditUserFragment : Fragment() {
         binding.userRoleLayout.error = null
     }
 
-    private fun roleLabel(role: UserRole): String = when (role) {
-        UserRole.ADMIN -> getString(R.string.role_admin)
-        UserRole.SELLER -> getString(R.string.role_seller)
-        UserRole.BUYER -> getString(R.string.role_buyer)
+    private fun roleLabel(role: String): String = when (role.lowercase()) {
+        "admin" -> getString(R.string.role_admin)
+        "seller" -> getString(R.string.role_seller)
+        else -> getString(R.string.role_buyer)
+    }
+
+    private fun String.toFirebaseRole(): String = when (lowercase()) {
+        getString(R.string.role_admin).lowercase(), "admin" -> "admin"
+        getString(R.string.role_seller).lowercase(), "seller" -> "seller"
+        else -> "buyer"
     }
 
     private fun updateStatusText(isActive: Boolean) {

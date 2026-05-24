@@ -4,20 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.project.store.R
+import com.project.store.data.repository.FirebaseRepository
 import com.project.store.databinding.FragmentSellerDashboardBinding
-import com.project.store.models.Order
-import com.project.store.models.OrderStatus
-import com.project.store.models.UserRole
-import com.project.store.utils.MockRepository
+import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 
 class SellerDashboardFragment : Fragment() {
 
     private var _binding: FragmentSellerDashboardBinding? = null
     private val binding get() = _binding!!
+    private val repository = FirebaseRepository.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,19 +41,48 @@ class SellerDashboardFragment : Fragment() {
     }
 
     private fun bindDashboard() {
-        val seller = MockRepository.getUsersByRole(UserRole.SELLER).first()
-        val products = MockRepository.getProductsBySeller(seller.id)
-        val productIds = products.map { it.id }.toSet()
-        val orders = getSellerOrders(productIds)
-        val revenue = orders.sumOf { order ->
-            order.products.filter { it.productId in productIds }.sumOf { it.subtotal }
-        }
+        val sellerId = repository.getCurrentFirebaseUser()?.uid.orEmpty()
+        setLoading(true)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repository.getCurrentUserFromFirestore()
+                .onSuccess { user ->
+                    binding.sellerWelcome.text = getString(R.string.seller_dashboard_welcome, user.name)
+                }
+                .onFailure {
+                    binding.sellerWelcome.text = getString(R.string.seller_dashboard_welcome, "")
+                }
 
-        binding.sellerWelcome.text = getString(R.string.seller_dashboard_welcome, seller.fullName)
-        binding.totalRevenue.text = formatCompactCurrency(revenue)
-        binding.totalOrders.text = orders.size.toString()
-        binding.activeProducts.text = products.count { it.isAvailable }.toString()
-        binding.lowStockProducts.text = products.count { it.stock <= LOW_STOCK_LIMIT }.toString()
+            val productsResult = repository.getProductsBySeller(sellerId)
+            val ordersResult = repository.getOrdersBySeller(sellerId)
+
+            productsResult
+                .onSuccess { products ->
+                    binding.activeProducts.text = products.count { it.stock > 0 }.toString()
+                    binding.lowStockProducts.text = products.count { it.stock <= LOW_STOCK_LIMIT }.toString()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+            ordersResult
+                .onSuccess { orders ->
+                    val activeOrders = orders.filterNot { it.status.equals("cancelled", ignoreCase = true) }
+                    binding.totalRevenue.text = formatCompactCurrency(activeOrders.sumOf { it.total })
+                    binding.totalOrders.text = activeOrders.size.toString()
+                }
+                .onFailure { error ->
+                    if (error.message?.contains("UNAVAILABLE") == true ||
+                        error.message?.contains("network") == true
+                    ) {
+                        Toast.makeText(requireContext(), R.string.error_network, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            setLoading(false)
+        }
     }
 
     private fun setupQuickActions() {
@@ -60,18 +90,20 @@ class SellerDashboardFragment : Fragment() {
             findNavController().navigate(R.id.nav_seller_products)
         }
         binding.createProductButton.setOnClickListener {
-            findNavController().navigate(R.id.nav_create_product)
+            val args = Bundle().apply {
+                putInt(EditProductFragment.ARG_PRODUCT_ID, NEW_PRODUCT_ID)
+            }
+            findNavController().navigate(R.id.nav_edit_product, args)
         }
         binding.openOrdersButton.setOnClickListener {
             findNavController().navigate(R.id.nav_seller_orders)
         }
     }
 
-    private fun getSellerOrders(productIds: Set<Int>): List<Order> {
-        return MockRepository.orders.filter { order ->
-            order.status != OrderStatus.CANCELLED &&
-            order.products.any { it.productId in productIds }
-        }
+    private fun setLoading(isLoading: Boolean) {
+        binding.openProductsButton.isEnabled = !isLoading
+        binding.createProductButton.isEnabled = !isLoading
+        binding.openOrdersButton.isEnabled = !isLoading
     }
 
     private fun formatCompactCurrency(value: Double): String = when {
@@ -87,6 +119,7 @@ class SellerDashboardFragment : Fragment() {
     }
 
     companion object {
+        private const val NEW_PRODUCT_ID = 0
         private const val LOW_STOCK_LIMIT = 10
         private const val THOUSAND = 1_000.0
         private const val MILLION = 1_000_000.0
